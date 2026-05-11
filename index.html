@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <title>Static BoilerPlate</title>
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container-l">
+      <a href="/" class="navbar__logo">
+        <img src="assets/images/main-logo.svg" alt="Hudle">
+      </a>
+
+      <button class="navbar__toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navbar__nav">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Product <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Solutions <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Resources <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Tarieven</a>
+          </li>
+        </ul>
+
+        <div class="navbar__actions">
+          <a href="#" class="navbar__login">Login</a>
+          <a href="#" class="navbar__btn">Start Gratis</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container-l">
+      <div class="hero__content">
+        <h1 class="hero__title">
+          <span class="hero__subtitle">Smart Talent</span>
+          Faster decisions
+        </h1>
+        <p class="hero__text">
+          Werk sneller samen met kandidaten en opdrachtgevers via één centrale workflow voor matching, kandidaatpresentatie, realtime feedback en compliance. 
+        </p>
+        
+        <p class="hero__text">
+          Minder handmatig werk, meer overzicht en een grotere kans op succesvolle plaatsingen.
+        </p>
+        
+        <div class="hero__buttons">
+          <a href="#" class="hero__btn hero__btn--primary">Probeer gratis</a>
+          <a href="#" class="hero__btn hero__btn--secondary">Boek een demo</a>
+        </div>
+      </div>
+
+      <div class="hero__video">
+        <div class="hero__video-wrapper">
+          <img src="assets/images/video-thumnail.jpg" alt="Video thumbnail" class="hero__video-thumbnail">
+          <button class="hero__play-btn" aria-label="Play video">
+            <img src="assets/images/icon-play.svg" alt="Play">
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <img src="assets/images/process-background.svg" alt="Process background" class="process__background">
+    <div class="process__inner">
+      <div class="container-l">
+        <div class="process__header">
+          <span class="process__tagline">Your process is</span>
+          <h2 class="process__title">Slowing you down</h2>
+        </div>
+
+        <h3 class="process__secondary-title">Je bent nog steeds:</h3>
+
+        <div class="process__grid">
+          <div class="process__item">
+            <div class="process__icon">
+              <img src="assets/images/icon-process-1.svg" alt="">
+            </div>
+            <p class="process__item-text">CV's heen en weer aan het mailen om de laatste versie van je professional te kunnen presenteren...</p>
+          </div>
+
+          <div class="process__item">
+            <div class="process__icon">
+              <img src="assets/images/icon-process-2.svg" alt="">
+            </div>
+            <p class="process__item-text">Verlopen VOG's aan het najagen om compliant richting je werkgever te kunnen zijn...</p>
+          </div>
+
+          <div class="process__item">
+            <div class="process__icon">
+              <img src="assets/images/icon-process-3.svg" alt="">
+            </div>
+            <p class="process__item-text">Feedback van opdrachtgevers aan het ophalen zonder te weten of het een koude of warme lead is...</p>
+          </div>
+
+          <div class="process__item">
+            <div class="process__icon">
+              <img src="assets/images/icon-process-4.svg" alt="">
+            </div>
+            <p class="process__item-text">Tijd aan het verliezen aan handmatige verrichtingen die langs elkaar heen lopen...</p>
+          </div>
+        </div>
+
+        <p class="process__bottom-text">Het is inefficient, tijdrovend en niet compliant.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-v1">
+    <div class="container-l">
+      <div class="feature-v1__header">
+        <h2 class="feature-v1__heading">
+          <span class="feature-v1__tagline">one platform</span>
+          Full Control
+        </h2>
+        <p class="feature-v1__subtitle">Hudle brings your entire workflow together.</p>
+      </div>
+
+      <div class="feature-v1__grid">
+        <div class="feature-v1__card">
+          <div class="feature-v1__card-content">
+            <h3 class="feature-v1__card-title">Slimme matching die direct je beste kandidaten selecteert</h3>
+            <p class="feature-v1__card-text">
+              Onze slimme matching analyseert je vacature en koppelt deze automatisch aan de beste kandidaten.
+            </p>
+            <a href="#" class="feature-v1__card-link">
+              Ontdek meer over Vacature Match
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+          <div class="feature-v1__card-image">
+            <img src="assets/images/graphic-v1.svg" alt="" srcset="">
+          </div>
+        </div>
+
+        <div class="feature-v1__card">
+          <div class="feature-v1__card-content">
+            <h3 class="feature-v1__card-title">Secure sharing. Instant feedback.</h3>
+            <p class="feature-v1__card-text">
+              Selecteer je beste matches en deel ze via een beveiligde, tijdelijke link waarin opdrachtgevers eenvoudig profielen bekijken en direct feedback geven.
+            </p>
+            <a href="#" class="feature-v1__card-link">
+              Ontdek meer over Hudle Link
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+          <div class="feature-v1__card-image">
+            <img src="assets/images/graphic-v2.svg" alt="" srcset="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-v2">
+    <div class="container-l">
+      <div class="feature-v2__slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="feature-v2__wrapper">
+              <h2 class="feature-v2__heading">Werk Compliant en Efficient tegelijk</h2>
+
+              <div class="feature-v2__grid">
+                <div class="feature-v2__col">
+                  <h3 class="feature-v2__col-title">VOG altijd up-to-date</h3>
+                  <p class="feature-v2__col-text">
+                    Houd eenvoudig inzicht in de geldigheid van VOG's, ontvang automatisch een seintje wanneer actie nodig is en houd je kandidatenpool moeiteloos compliant.
+                  </p>
+                  <a href="#" class="feature-v2__col-link">
+                    Ontdek meer over VOG
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                  <div class="feature-v2__col-image">
+                    <img src="assets/images/slide-1-graphic-1.svg" alt="" srcset="">
+                  </div>
+                </div>
+
+                <div class="feature-v2__col">
+                  <h3 class="feature-v2__col-title">Geen CV's in mailboxen, alles veilig centraal</h3>
+                  <p class="feature-v2__col-text">
+                    Beheer en update profielen binnen één omgeving, zonder dat persoonsgegevens rondzwerven. Laat professionals zelf hun gegevens bijwerken en voorkom eindeloze versies in Word en PDF.
+                  </p>
+                  <a href="#" class="feature-v2__col-link">
+                    Ontdek meer over Notificaties
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                  <div class="feature-v2__col-image">
+                    <img src="assets/images/slide-1-graphic-2.svg" alt="" srcset="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="feature-v2__wrapper">
+              <h2 class="feature-v2__heading">Werk Compliant en Efficient tegelijk</h2>
+
+              <div class="feature-v2__grid">
+                <div class="feature-v2__col">
+                  <h3 class="feature-v2__col-title">Professioneel presenteren, zonder risico</h3>
+                  <p class="feature-v2__col-text">
+                    Deel kandidaten via een beveiligde link, anonimiseer gegevens en bepaal hoe lang informatie zichtbaar blijft.
+                  </p>
+                  <a href="#" class="feature-v2__col-link">
+                    Ontdek meer over Hudle Link
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </a>
+                  <div class="feature-v2__col-image">
+                    <img src="assets/images/slide-2-graphic-1.svg" alt="" srcset="">
+                  </div>
+                </div>
+
+                <div class="feature-v2__col">
+                  <h3 class="feature-v2__col-title">Toegang met 2-step verificatie</h3>
+                  <p class="feature-v2__col-text">
+                    Na het openen van de link ontvangt de opdrachtgever een unieke code per sms om veilig toegang te krijgen tot de kandidaten, zodat kandidaatgegevens altijd beschermd blijven.
+                  </p>
+                  
+                  <div class="feature-v2__col-image">
+                    <img src="assets/images/slide-2-graphic.svg" alt="" srcset="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="feature-v2__arrow feature-v2__arrow--prev">
+        <svg width="10" height="16" viewBox="0 0 10 16" fill="none">
+          <path d="M9 1L1 8L9 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button class="feature-v2__arrow feature-v2__arrow--next">
+        <svg width="10" height="16" viewBox="0 0 10 16" fill="none">
+          <path d="M1 1L9 8L1 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <section class="feature-v3">
+    <div class="container-l">
+      <div class="feature-v3__wrapper">
+        <div class="feature-v3__content">
+          <h2 class="feature-v3__heading">Sneller feedback, sneller plaatsen</h2>
+          <p class="feature-v3__text">
+            Zie direct wat je opdrachtgever denkt, zonder mails of telefoontjes. Weet meteen welke kandidaten aansluiten en versnel je opvolging richting plaatsing.
+          </p>
+          <a href="#" class="feature-v3__link">
+            Ontdek meer over Hudle Link
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="feature-v3__image-left">
+            <img src="assets/images/feedback-1.svg" alt="">
+          </div>
+        </div>
+
+        <div class="feature-v3__image-right">
+          <img src="assets/images/feedback-2.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <img src="assets/images/section-bg-v2.svg" alt="" srcset="" class="cta__background">
+    <div class="container-l">
+      <div class="cta__grid">
+        <div class="cta__content">
+          <span class="cta__tagline">Stop met CV's mailen,</span>
+          <h2 class="cta__title">Start met sneller plaatsen.</h2>
+          <p class="cta__text">
+            Werk in één platform waar je kandidaten matcht, deelt en direct feedback ontvangt, zonder losse documenten of eindeloze e-mails.
+          </p>
+          <p class="cta__text cta__text--bold">
+            Eén platform. Meer snelheid. Meer plaatsingen.
+          </p>
+          <div class="cta__buttons">
+            <a href="#" class="cta__btn cta__btn--primary">Probeer Gratis</a>
+          </div>
+        </div>
+        <div class="cta__image">
+          <img src="assets/images/stop-met-section.png" alt="">
+        </div>
+      </div>
+
+      <div class="cta__stats">
+        <div class="cta__stat">
+          <div class="cta__stat-left">
+            <span class="cta__stat-prefix">tot</span>
+            <span class="cta__stat-number">75%</span>
+          </div>
+          <div class="cta__stat-right">
+            <span class="cta__stat-word">Tijd</span>
+            <span class="cta__stat-desc">besparen per vacature</span>
+          </div>
+        </div>
+        <div class="cta__stat">
+          <div class="cta__stat-left">
+            <span class="cta__stat-prefix">tot</span>
+            <span class="cta__stat-number">70%</span>
+          </div>
+          <div class="cta__stat-right">
+            <span class="cta__stat-word">Minder</span>
+            <span class="cta__stat-desc">follow up nodig</span>
+          </div>
+        </div>
+        <div class="cta__stat">
+          <div class="cta__stat-left">
+            <span class="cta__stat-prefix">tot</span>
+            <span class="cta__stat-number">5X</span>
+          </div>
+          <div class="cta__stat-right">
+            <span class="cta__stat-word">Sneller</span>
+            <span class="cta__stat-desc">je kandidaten voorstellen</span>
+          </div>
+        </div>
+        <div class="cta__stat">
+          <div class="cta__stat-left">
+            <span class="cta__stat-prefix">tot</span>
+            <span class="cta__stat-number">40%</span>
+          </div>
+          <div class="cta__stat-right">
+            <span class="cta__stat-word">Meer</span>
+            <span class="cta__stat-desc">Conversie</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cv-template">
+    <div class="container-l">
+      <div class="cv-template__header">
+        <span class="cv-template__tagline">Jouw CV-templates</span>
+        <h2 class="cv-template__title">ATS vriendelijk</h2>
+      </div>
+
+      <div class="cv-template__card">
+        <div class="cv-template__card-image cv-template__card-image--sm">
+          <img src="assets/images/cv-template-1.svg" alt="">
+        </div>
+
+        <div class="cv-template__card-content">
+          <span class="cv-template__card-tagline">Kwalitatieve instroom</span>
+          <h3 class="cv-template__card-heading">Laat sterkere kandidaten opvallen</h3>
+          <p class="cv-template__card-text">
+            Omdat opdrachtgevers op populaire vacatures soms honderden sollicitaties ontvangen, gebruiken ATS-systemen automatische screening funnels om snel de meest relevante kandidaten te selecteren.
+          </p>
+          <p class="cv-template__card-text">
+            Maar juist daar gaat het vaak mis: sterke kandidaten met verouderde, slecht opgebouwde of niet ATS-vriendelijke CV's komen soms niet eens door die eerste screening heen.
+          </p>
+          <a href="#" class="cv-template__card-btn">Ontdek meer</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cv-template cv-template--no-header">
+    <div class="container-l">
+      <div class="cv-template__card">
+        <div class="cv-template__card-content">
+          <h3 class="cv-template__card-heading">Sterkere CV's. Hogere conversie.</h3>
+          <p class="cv-template__card-text">
+            Met de Hudle CV Template Builder bied je kandidaten een professionele, gestandaardiseerde opmaak die direct klaar is voor presentatie.
+          </p>
+          <p class="cv-template__card-text">
+            Geen verouderde layouts of onleesbare bestanden meer. Recruiters besparen tijd, en opdrachtgevers ontvangen overzichtelijke profielen die vertrouwen wekken.
+          </p>
+          <a href="#" class="cv-template__card-link">
+            Ontdek meer over Template Builder
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <div class="cv-template__card-image-bottom">
+            <img src="assets/images/cv-template-2-secondary.svg" alt="">
+          </div>
+        </div>
+        <div class="cv-template__card-image">
+          <img src="assets/images/cv-template-2.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cv-cta">
+    <div class="container-l">
+      <div class="cv-cta__wrapper">
+        <div class="cv-cta__bg">
+          <img src="assets/images/create-cv-background.jpg" alt="">
+        </div>
+        <div class="cv-cta__content">
+          <span class="cv-cta__tagline">Probeer zelf de</span>
+          <h2 class="cv-cta__title">CV Template Builder</h2>
+          <a href="#" class="cv-cta__btn">Start!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ats">
+    <img src="assets/images/background-shape-3.svg" alt="" srcset="" class="ats__background">
+    <div class="container-l">
+      <div class="ats__grid">
+        <div class="ats__content">
+          <span class="ats__tagline">Optimaliseer alles vóór het</span>
+          <h2 class="ats__title">ATS</h2>
+          <p class="ats__text">
+            Waar ATS-systemen vacatures verwerken en sollicitaties screenen, helpt Hudle recruiters en detacheerders juist in de cruciale stap daarvoor. Van slimme matching en professionele kandidaatpresentatie tot realtime feedback, warmere opvolging en uiteindelijk meer plaatsingen.
+          </p>
+          <p class="ats__text">
+            Het resultaat: betere data, snellere beslissingen en een veel efficiëntere instroom van kandidaten in ATS systemen van opdrachtgevers.
+          </p>
+          <div class="ats__buttons">
+            <a href="#" class="ats__btn ats__btn--primary">Probeer Gratis</a>
+            <a href="#" class="ats__btn ats__btn--outline">Ontdek meer</a>
+          </div>
+        </div>
+        <div class="ats__image">
+          <img src="assets/images/ats-img.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="audiences">
+    <div class="container-l">
+      <div class="audiences__header">
+        <div class="audiences__header-inner">
+          <img src="assets/images/balls.svg" alt="" srcset="" class="audiences__header-inner__image">
+          <span class="audiences__tagline">Minder gedoe, meer controle en uiteindelijk:</span>
+          <h2 class="audiences__title">Meer succesvolle plaatsingen</h2>
+        </div>
+
+
+        <p class="audiences__subtitle">Hudle is er voor organisaties die vooruit willen.</p>
+
+        <div class="audiences__tabs">
+          <span class="audiences__tabs-label">Voor</span>
+          <button class="audiences__tab audiences__tab--active" data-slide="0">Recruiters</button>
+          <button class="audiences__tab" data-slide="1">Resourcemanagers</button>
+          <button class="audiences__tab" data-slide="2">Management / Directie</button>
+          <button class="audiences__tab" data-slide="3">Compliance Officers</button>
+        </div>
+      </div>
+
+      <div class="audiences__slider-wrap">
+        <div class="audiences__slider swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="audiences__card">
+                <div class="audiences__card-image">
+                  <img src="assets/images/testimonial-1.png" alt="" srcset="">
+                </div>
+                <div class="audiences__card-content">
+                  <span class="audiences__card-label">Voor Recruiters</span>
+                  <h3 class="audiences__card-heading">Meer plaatsingen met minder handmatig werk</h3>
+                  <p class="audiences__card-text">
+                    Match sneller, presenteer kandidaten professioneel via een beveiligde link en ontvang direct feedback van opdrachtgevers, zonder eindeloze mails of belrondes.
+                  </p>
+                  <p class="audiences__card-text">
+                    Hudle neemt het zware werk uit handen zodat jij je kunt focussen op wat ertoe doet: de juiste mensen op de juiste plek krijgen.
+                  </p>
+                  <a href="#" class="audiences__card-btn">Ontdek meer</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="audiences__card">
+                <div class="audiences__card-image">
+                  <img src="assets/images/testimonial-2.png" alt="" srcset="">
+                </div>
+                <div class="audiences__card-content">
+                  <span class="audiences__card-label">Voor Resourcemanagers</span>
+                  <h3 class="audiences__card-heading">Overzicht over je hele flexpool in één dashboard</h3>
+                  <p class="audiences__card-text">
+                    Beheer je professionals, monitor beschikbaarheid en compliance, en schakel snel bij wisselende klantbehoeften.
+                  </p>
+                  <p class="audiences__card-text">
+                    Met Hudle houd je grip op je volledige resourceplanning zonder spreadsheets of losse systemen.
+                  </p>
+                  <a href="#" class="audiences__card-btn">Ontdek meer</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="audiences__card">
+                <div class="audiences__card-image">
+                  <img src="assets/images/testimonial-3.png" alt="" srcset="">
+                </div>
+                <div class="audiences__card-content">
+                  <span class="audiences__card-label">Voor Management / Directie</span>
+                  <h3 class="audiences__card-heading">Datagedreven beslissingen voor groei</h3>
+                  <p class="audiences__card-text">
+                    Krijg realtime inzicht in conversieratio's, doorlooptijden en teamprestaties. Zie direct waar kansen liggen en waar het proces stokt.
+                  </p>
+                  <p class="audiences__card-text">
+                    Hudle geeft je de cijfers die je nodig hebt om sneller te schalen en winstgevender te opereren.
+                  </p>
+                  <a href="#" class="audiences__card-btn">Ontdek meer</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="audiences__card">
+                <div class="audiences__card-image">
+                  <img src="assets/images/testimonial-4.png" alt="" srcset="">
+                </div>
+                <div class="audiences__card-content">
+                  <span class="audiences__card-label">Voor Compliance Officers</span>
+                  <h3 class="audiences__card-heading">Altijd audit-ready, zonder stress</h3>
+                  <p class="audiences__card-text">
+                    Automatische VOG-controles, veilige documentopslag en een compleet audit-trail. Hudle houdt je organisatie compliant zonder extra werk.
+                  </p>
+                  <p class="audiences__card-text">
+                    Geen verrassingen bij controles, alles is op orde en direct inzichtelijk.
+                  </p>
+                  <a href="#" class="audiences__card-btn">Ontdek meer</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="audiences__arrow audiences__arrow--prev">
+          <svg width="10" height="16" viewBox="0 0 10 16" fill="none">
+            <path d="M9 1L1 8L9 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button class="audiences__arrow audiences__arrow--next">
+          <svg width="10" height="16" viewBox="0 0 10 16" fill="none">
+            <path d="M1 1L9 8L1 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="professionals">
+    <div class="container-l">
+      <div class="professionals__grid">
+        <div class="professionals__content">
+          <span class="professionals__tagline">Jouw succes is onze</span>
+          <h2 class="professionals__title">Prioriteit</h2>
+          <ul class="professionals__list">
+            <li class="professionals__list-item">
+              <img src="assets/images/icon-tick.svg" alt="" class="professionals__list-icon">
+              Geen CV's en persoonsgegevens meer heen en weer via e-mail
+            </li>
+            <li class="professionals__list-item">
+              <img src="assets/images/icon-tick.svg" alt="" class="professionals__list-icon">
+              Altijd actuele kandidaat- en VOG-data
+            </li>
+            <li class="professionals__list-item">
+              <img src="assets/images/icon-tick.svg" alt="" class="professionals__list-icon">
+              Vind met onze AI-tools de juiste kandidaten voor een vacature
+            </li>
+            <li class="professionals__list-item">
+              <img src="assets/images/icon-tick.svg" alt="" class="professionals__list-icon">
+              Realtime feedback van opdrachtgevers voor snellere, warme opvolging
+            </li>
+            <li class="professionals__list-item">
+              <img src="assets/images/icon-tick.svg" alt="" class="professionals__list-icon">
+              Benut verborgen potentie binnen je eigen netwerk
+            </li>
+            <li class="professionals__list-item">
+              <img src="assets/images/icon-tick.svg" alt="" class="professionals__list-icon">
+              Schakel sneller richting opdrachtgevers en vergroot je slagkracht
+            </li>
+            <li class="professionals__list-item">
+              <img src="assets/images/icon-tick.svg" alt="" class="professionals__list-icon">
+              GDPR en AVG-vriendelijk werken
+            </li>
+          </ul>
+          <div class="professionals__buttons">
+            <a href="#" class="professionals__btn professionals__btn--primary">Probeer gratis</a>
+            <a href="#" class="professionals__btn professionals__btn--secondary">Boek een demo</a>
+          </div>
+        </div>
+        <div class="professionals__image">
+          <img src="assets/images/feature-w-img-img.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-grid">
+    <div class="container-l">
+
+
+      <div class="features-grid__grid">
+        <div class="features-grid__card">
+          <div class="features-grid__card-icon">
+            <img src="assets/images/icon-feature-1.svg" alt="">
+          </div>
+          <h3 class="features-grid__card-title">Instant Candidate Matching</h3>
+          <p class="features-grid__card-text"><span class="features-grid__highlight">Tot 75% minder</span> zoektijd <span class="features-grid__highlight">Tot 5x sneller</span> kandidaten voorstellen</p>
+        </div>
+
+        <div class="features-grid__card">
+          <div class="features-grid__card-icon">
+            <img src="assets/images/icon-feature-2.svg" alt="">
+          </div>
+          <h3 class="features-grid__card-title">Realtime Client Feedback</h3>
+          <p class="features-grid__card-text"><span class="features-grid__highlight">Tot 70% minder</span> follow-up nodig <span class="features-grid__highlight">Tot 2x snellere</span> besluitvorming</p>
+        </div>
+
+        <div class="features-grid__card">
+          <div class="features-grid__card-icon">
+            <img src="assets/images/icon-feature-3.svg" alt="">
+          </div>
+          <h3 class="features-grid__card-title">Actuele data, zonder opvolgen</h3>
+          <p class="features-grid__card-text"><span class="features-grid__highlight">Tot 80% minder tijd kwijt</span> aan het najagen van updates dankzij automatische reminders</p>
+        </div>
+
+        <div class="features-grid__card">
+          <div class="features-grid__card-icon">
+            <img src="assets/images/icon-feature-4.svg" alt="">
+          </div>
+          <h3 class="features-grid__card-title">Geen losse CV-versies meer</h3>
+          <p class="features-grid__card-text">Werk met <span class="features-grid__highlight">één centrale bron</span> in plaats van meerdere documenten en versies</p>
+        </div>
+
+        <div class="features-grid__card">
+          <div class="features-grid__card-icon">
+            <img src="assets/images/icon-feature-5.svg" alt="">
+          </div>
+          <h3 class="features-grid__card-title">ATS vriendelijke CV's</h3>
+          <p class="features-grid__card-text"><span class="features-grid__highlight">100% uniforme CV's</span> volgens jouw template en standaard</p>
+        </div>
+
+        <div class="features-grid__card">
+          <div class="features-grid__card-icon">
+            <img src="assets/images/icon-feature-6.svg" alt="">
+          </div>
+          <h3 class="features-grid__card-title">Meer dan 30.000 skillsets voor al je profielen</h3>
+          <p class="features-grid__card-text">Laat nooit je kandidatenpool <span class="features-grid__highlight">onbenut</span> door incomplete skills</p>
+        </div>
+
+        <div class="features-grid__card">
+          <div class="features-grid__card-icon">
+            <img src="assets/images/icon-feature-7.svg" alt="">
+          </div>
+          <h3 class="features-grid__card-title">VOG status altijd up-to-date</h3>
+          <p class="features-grid__card-text"><span class="features-grid__highlight">Direct inzicht</span> in geldigheid en automatische signalering bij verloop</p>
+        </div>
+
+        <div class="features-grid__card">
+          <div class="features-grid__card-icon">
+            <img src="assets/images/icon-feature-8.svg" alt="">
+          </div>
+          <h3 class="features-grid__card-title">Compliant en klaar voor wetgeving</h3>
+          <p class="features-grid__card-text"><span class="features-grid__highlight">Voorbereid op</span> WTTA. Compliant met security standaarden zoals ISO en GDPR</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Posts -->
+  <section class="latest-posts">
+    <div class="container-l">
+      <h2 class="latest-posts__title">Latest Posts</h2>
+
+      <div class="latest-posts__slider-wrap">
+        <button class="latest-posts__arrow latest-posts__arrow--prev">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M13 4L7 10L13 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <div class="swiper latest-posts__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="latest-posts__card">
+                <div class="latest-posts__card-img">
+                  <img src="assets/images/blog-1.jpg" alt="">
+                </div>
+                <div class="latest-posts__card-body">
+                  <div class="latest-posts__card-meta">
+                    <span class="latest-posts__card-tag">Blog</span>
+                    <span class="latest-posts__card-date">23 januari 2026</span>
+                  </div>
+                  <h3 class="latest-posts__card-title">Hoe je efficiënt vacatures kan matchen aan de juiste...</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="latest-posts__card">
+                <div class="latest-posts__card-img">
+                  <img src="assets/images/blog-2.jpg" alt="">
+                </div>
+                <div class="latest-posts__card-body">
+                  <div class="latest-posts__card-meta">
+                    <span class="latest-posts__card-tag">Blog</span>
+                    <span class="latest-posts__card-date">3 februari 2026</span>
+                  </div>
+                  <h3 class="latest-posts__card-title">Wat is een Audit Trail en hoe bereid je je voor op WTTA?</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="latest-posts__card">
+                <div class="latest-posts__card-img">
+                  <img src="assets/images/blog-2.jpg" alt="">
+                </div>
+                <div class="latest-posts__card-body">
+                  <div class="latest-posts__card-meta">
+                    <span class="latest-posts__card-tag">Product Release</span>
+                    <span class="latest-posts__card-date">3 februari 2026</span>
+                  </div>
+                  <h3 class="latest-posts__card-title">Baba Link Vacature Match vanaf vandaag live!</h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="latest-posts__card">
+                <div class="latest-posts__card-img">
+                  <img src="assets/images/blog-2.jpg" alt="">
+                </div>
+                <div class="latest-posts__card-body">
+                  <div class="latest-posts__card-meta">
+                    <span class="latest-posts__card-tag">Product Release</span>
+                    <span class="latest-posts__card-date">3 februari 2026</span>
+                  </div>
+                  <h3 class="latest-posts__card-title">Baba Link Vacature Match vanaf vandaag live!</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="latest-posts__arrow latest-posts__arrow--next">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M7 4L13 10L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="latest-posts__footer">
+        <a href="#" class="latest-posts__btn">Ontdek meer verhalen</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    document.querySelector('.navbar__toggle').addEventListener('click', function () {
+      this.classList.toggle('active');
+      document.querySelector('.navbar__nav').classList.toggle('active');
+    });
+
+    new Swiper('.feature-v2__slider', {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      navigation: {
+        prevEl: '.feature-v2__arrow--prev',
+        nextEl: '.feature-v2__arrow--next',
+      },
+    });
+
+    var audiencesSwiper = new Swiper('.audiences__slider', {
+      slidesPerView: 1,
+      spaceBetween: 24,
+      navigation: {
+        prevEl: '.audiences__arrow--prev',
+        nextEl: '.audiences__arrow--next',
+      },
+      on: {
+        slideChange: function () {
+          var tabs = document.querySelectorAll('.audiences__tab');
+          tabs.forEach(function (tab) { tab.classList.remove('audiences__tab--active'); });
+          tabs[this.activeIndex].classList.add('audiences__tab--active');
+        },
+      },
+    });
+
+    document.querySelectorAll('.audiences__tab').forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        audiencesSwiper.slideTo(parseInt(this.dataset.slide));
+      });
+    });
+
+    new Swiper('.latest-posts__slider', {
+      slidesPerView: 3,
+      spaceBetween: 24,
+      navigation: {
+        prevEl: '.latest-posts__arrow--prev',
+        nextEl: '.latest-posts__arrow--next',
+      },
+    });
+  </script>
+</body>
+</html>
