@@ -214,13 +214,23 @@
 .process {
   position: relative;
 
+      
+  @media (max-width: 1200px) {
+   background-color: #0D0626;
+  }
+
   &__background {
     position: absolute;
     top: -100px;
     left: 0;
     width: 100%;
     z-index: -1;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
+
 
   &__inner {
     padding: 40px 0 80px;
@@ -342,6 +352,7 @@
 
     &__header {
       margin-bottom: 48px;
+      text-align: center;
     }
 
     &__secondary-title {
@@ -495,6 +506,14 @@
       grid-template-columns: 1fr;
       gap: 20px;
     }
+
+    &__card-image {
+      max-width: 100%;
+
+      img {
+        max-width: 100%;
+      }
+    }
   }
 
   // Mobile
@@ -514,7 +533,7 @@
     }
 
     &__card {
-      padding: 28px 24px;
+      padding: 28px 24px 0;
     }
 
     &__card-title {
@@ -677,6 +696,14 @@
 
       &--next {
         right: 12px;
+      }
+    }
+
+    &__col-image {
+      max-width: 100%;
+
+      img {
+        max-width: 100%;
       }
     }
   }
@@ -846,6 +873,10 @@
 
     .cv-template__card-image {
       padding: 0;
+
+      @media (max-width: 992px) {
+        padding: 20px;
+      }
     }
   }
 
@@ -882,6 +913,11 @@
     grid-template-columns: 1fr 1fr;
     align-items: flex-end;
     gap: 88px;
+
+    @media (max-width: 1200px) {
+      gap: 20px;
+      padding-block: 20px;
+    }
   }
 
   &__card-image {
@@ -997,7 +1033,7 @@
 
   // Tablet
   @media (max-width: 992px) {
-    padding: 0 0 80px;
+    margin: 40px 0 80px;
 
     &__card {
       grid-template-columns: 1fr;
@@ -1028,7 +1064,7 @@
 
   // Mobile
   @media (max-width: 576px) {
-    padding: 0 0 60px;
+    margin: 60px 0 60px;
 
     &__header {
       margin-bottom: 40px;
@@ -1069,8 +1105,11 @@
 // CTA Section
 .cta {
   position: relative;
-  // background-color: #0D0626;
   padding-block: 80px 170px;
+
+  @media (max-width: 1200px) {
+    background-color: #0D0626;
+  }
 
   &__background {
     position: absolute;
@@ -1080,6 +1119,10 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
 
   .container-l {
@@ -1293,6 +1336,7 @@
 
 // CV CTA Section
 .cv-cta {
+  margin: 100px 0;
   .container-l {
     padding-inline: 20px;
   }
@@ -1414,6 +1458,10 @@
   padding: 100px 0;
   position: relative;
 
+  @media (max-width: 1200px) {
+    background-color: #0D0626;
+  }
+
   &__background {
     position: absolute;
     top: 0;
@@ -1422,6 +1470,10 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
+
+    @media (max-width: 1200px) {
+      display: none;
+    }
   }
 
   .container-l {
@@ -1572,6 +1624,10 @@
     position: relative;
     margin-bottom: 150px;
 
+    @media (max-width: 1200px) {
+      margin-bottom: 80px;
+    }
+
     &__image {
       position: absolute;
       top: 50%;
@@ -1579,6 +1635,10 @@
       transform: translate(-50%, -50%);
       max-width: 308px;
       max-height: 285px;
+
+      @media (max-width: 1200px) {
+        display: none;
+      }
     }
   }
 
@@ -1684,13 +1744,6 @@
     }
   }
 
-  &__placeholder {
-    width: 100%;
-    height: 100%;
-    min-height: 420px;
-    background-color: #E8E4DD;
-  }
-
   &__card-content {
     padding: 60px 56px;
     display: flex;
@@ -1782,7 +1835,7 @@
 
   // Tablet
   @media (max-width: 992px) {
-    padding: 80px 0;
+    margin: 80px 0;
 
     &__title {
       font-size: 42px;
@@ -1790,14 +1843,17 @@
 
     &__card {
       grid-template-columns: 1fr;
+      padding: 20px;
+      gap: 15px;
     }
 
-    &__placeholder {
-      min-height: 280px;
+    &__card-image {
+      height: 300px;
     }
 
     &__card-content {
       padding: 40px 36px;
+      padding-inline: 0;
     }
 
     &__card-heading {
@@ -1812,7 +1868,7 @@
 
   // Mobile
   @media (max-width: 576px) {
-    padding: 60px 0;
+    margin: 60px 0;
 
     &__tagline {
       font-size: 20px;
@@ -1832,7 +1888,7 @@
     }
 
     &__card-content {
-      padding: 28px 24px;
+      padding: 28px 0;
     }
 
     &__card-heading {
@@ -1968,7 +2024,7 @@
 
   // Tablet
   @media (max-width: 992px) {
-    padding: 80px 0;
+    margin: 80px 0;
 
     &__grid {
       grid-template-columns: 1fr;
@@ -1982,7 +2038,7 @@
 
   // Mobile
   @media (max-width: 576px) {
-    padding: 60px 0;
+    margin: 60px 0;
 
     &__title {
       font-size: 32px;
@@ -2265,3 +2321,4 @@
     }
   }
 }
+
