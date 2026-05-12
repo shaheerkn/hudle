@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-  <title>Static BoilerPlate</title>
+  <title>Hudle - Homepage</title>
 </head>
 <body>
 
@@ -847,59 +848,9 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    document.querySelector('.navbar__toggle').addEventListener('click', function () {
-      this.classList.toggle('active');
-      document.querySelector('.navbar__nav').classList.toggle('active');
-    });
-
-    new Swiper('.feature-v2__slider', {
-      slidesPerView: 1,
-      spaceBetween: 24,
-      navigation: {
-        prevEl: '.feature-v2__arrow--prev',
-        nextEl: '.feature-v2__arrow--next',
-      },
-    });
-
-    var audiencesSwiper = new Swiper('.audiences__slider', {
-      slidesPerView: 1,
-      spaceBetween: 24,
-      navigation: {
-        prevEl: '.audiences__arrow--prev',
-        nextEl: '.audiences__arrow--next',
-      },
-      on: {
-        slideChange: function () {
-          var tabs = document.querySelectorAll('.audiences__tab');
-          tabs.forEach(function (tab) { tab.classList.remove('audiences__tab--active'); });
-          tabs[this.activeIndex].classList.add('audiences__tab--active');
-        },
-      },
-    });
-
-    document.querySelectorAll('.audiences__tab').forEach(function (tab) {
-      tab.addEventListener('click', function () {
-        audiencesSwiper.slideTo(parseInt(this.dataset.slide));
-      });
-    });
-
-    new Swiper('.latest-posts__slider', {
-      slidesPerView: 1,
-      spaceBetween: 24,
-      navigation: {
-        prevEl: '.latest-posts__arrow--prev',
-        nextEl: '.latest-posts__arrow--next',
-      },
-      breakpoints: {
-        577: {
-          slidesPerView: 2,
-        },
-        993: {
-          slidesPerView: 3,
-        },
-      },
-    });
-  </script>
+  <script src="js/navbar.js"></script>
+  <script src="js/feature-v2-slider.js"></script>
+  <script src="js/audiences-slider.js"></script>
+  <script src="js/latest-posts-slider.js"></script>
 </body>
 </html>

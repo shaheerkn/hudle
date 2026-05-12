@@ -1,0 +1,180 @@
+.latest-posts {
+  margin: 110px 0;
+
+  .container-l {
+    padding-inline: 20px;
+  }
+
+  &__title {
+    font-family: "Abhaya Libre", serif;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 100%;
+    letter-spacing: -0.1em;
+    color: #000;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  &__slider-wrap {
+    position: relative;
+  }
+
+  &__slider {
+    overflow: hidden;
+  }
+
+  &__arrow {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #2D1F41;
+    border: 7px solid #fff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+
+    &--prev {
+      left: -28px;
+    }
+
+    &--next {
+      right: -28px;
+    }
+
+    &:hover {
+      background: #3d2f51;
+    }
+
+    &.swiper-button-disabled {
+      display: none;
+    }
+  }
+
+  &__card {
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  &__card-img {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__card-body {
+    background: #8793F8;
+    padding: 24px;
+  }
+
+  &__card-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  &__card-tag {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 6px 12px;
+    border-radius: 50px;
+  }
+
+  &__card-date {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &__card-title {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: -0.05em;
+    color: #fff;
+  }
+
+  &__footer {
+    text-align: center;
+    margin-top: 48px;
+  }
+
+  &__btn {
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: -5%;
+    color: #8793F8;
+    border: 0.5px solid #8793F8;
+    border-radius: 50px;
+    padding: 15px 24px;
+    transition: background-color 0.2s, color 0.2s;
+  }
+
+  // Tablet
+  @media (max-width: 992px) {
+    margin: 80px 0;
+
+    &__title {
+      font-size: 42px;
+      margin-bottom: 40px;
+    }
+
+    &__arrow {
+      display: none;
+    }
+
+    &__slider-wrap {
+      gap: 0;
+    }
+
+    &__slider {
+      .swiper-slide {
+        width: 80%;
+      }
+    }
+  }
+
+  // Mobile
+  @media (max-width: 576px) {
+    margin: 60px 0;
+
+    &__title {
+      font-size: 32px;
+      margin-bottom: 32px;
+    }
+
+    &__card-body {
+      padding: 20px;
+    }
+
+    &__card-title {
+      font-size: 16px;
+    }
+  }
+}
