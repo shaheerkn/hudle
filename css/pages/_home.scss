@@ -213,15 +213,20 @@
 // Process Section
 .process {
   position: relative;
-
+  padding-block: 177px 100px;
       
   @media (max-width: 1200px) {
    background-color: #0D0626;
   }
 
+  @media (min-width: 1500px) {
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+
   &__background {
     position: absolute;
-    top: -100px;
+    top: -50px;
     left: 0;
     width: 100%;
     z-index: -1;
@@ -1111,6 +1116,11 @@
     background-color: #0D0626;
   }
 
+  @media (min-width: 1500px) {
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+
   &__background {
     position: absolute;
     top: 0;
@@ -1460,6 +1470,11 @@
 
   @media (max-width: 1200px) {
     background-color: #0D0626;
+  }
+
+  @media (min-width: 1500px) {
+    max-width: 1440px;
+    margin-inline: auto;
   }
 
   &__background {
@@ -2304,12 +2319,6 @@
     &__title {
       font-size: 32px;
       margin-bottom: 32px;
-    }
-
-    &__slider {
-      .swiper-slide {
-        width: 90%;
-      }
     }
 
     &__card-body {
