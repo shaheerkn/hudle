@@ -657,6 +657,7 @@ button {
 @media (max-width: 1200px) {
   .process {
     background-color: #0D0626;
+    padding-block: 50px;
   }
 }
 @media (min-width: 1500px) {

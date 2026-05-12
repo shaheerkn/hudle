@@ -4,6 +4,7 @@
       
   @media (max-width: 1200px) {
    background-color: #0D0626;
+   padding-block: 50px;
   }
 
   @media (min-width: 1500px) {
@@ -22,7 +23,6 @@
       display: none;
     }
   }
-
 
   &__inner {
     padding: 40px 0 80px;
