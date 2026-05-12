@@ -142,18 +142,17 @@
 
   &__card-label {
     font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 24px;
     line-height: 100%;
     letter-spacing: -0.05em;
-    color: #8894F9;
     margin-bottom: 16px;
   }
 
   &__card-heading {
     font-family: "Abhaya Libre", serif;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 48px;
     line-height: 100%;
     letter-spacing: -0.1em;
     color: #000;
@@ -164,8 +163,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
-    letter-spacing: -0.05em;
-    color: #493934;
+    color: #000000;
     margin-top: 16px;
   }
 
@@ -198,8 +196,8 @@
     top: 50%;
     transform: translateY(-50%);
     z-index: 2;
-    width: 48px;
-    height: 48px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -253,6 +251,15 @@
     &__arrow {
       width: 40px;
       height: 40px;
+      border-width: 2px;
+
+      &--prev {
+        left: 5px;
+      }
+
+      &--next {
+        right: 5px;
+      }
     }
   }
 
@@ -287,11 +294,6 @@
 
     &__placeholder {
       min-height: 200px;
-    }
-
-    &__arrow {
-      width: 36px;
-      height: 36px;
     }
   }
 }

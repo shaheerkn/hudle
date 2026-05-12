@@ -1,5 +1,7 @@
 .cv-cta {
   margin: 100px 0;
+  cursor: pointer;
+
   .container-l {
     padding-inline: 20px;
   }
@@ -10,6 +12,10 @@
     border-radius: 16px;
     padding: 100px 0;
     overflow: hidden;
+    
+    &:hover {
+      background-color: #665077;
+    }
   }
 
   &__bg {
@@ -36,7 +42,12 @@
       width: 100%;
       height: 100%;
       background-color: rgba(113, 87, 135, 0.95);
+      transition: background-color 0.2s;
     }
+  }
+
+  &:hover &__bg::before {
+    background-color: rgba(113, 87, 135, 0.99);
   }
 
   &__content {

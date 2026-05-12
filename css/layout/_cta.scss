@@ -1,9 +1,10 @@
 .cta {
   position: relative;
-  padding-block: 80px 170px;
+  padding-block: 256px 170px;
 
   @media (max-width: 1200px) {
     background-color: #0D0626;
+    padding-block: 80px 170px;
   }
 
   @media (min-width: 1500px) {
@@ -109,9 +110,20 @@
 
   &__image {
     font-size: 0;
+    position: absolute;
+    top: 40px;
+    right: 0;
 
     img {
       width: 100%;
+    }
+
+    @media (max-width: 1200px) {
+      max-width: 500px;
+    }
+
+    @media (max-width: 1024px) {
+      position: relative;
     }
   }
 
@@ -121,13 +133,18 @@
     gap: 40px;
     margin-top: 30px;
     padding-top: 60px;
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    margin-top: 140px;
+
+    @media (max-width: 1200px) {
+      margin-top: 60px;
+    }
   }
 
   &__stat {
     display: flex;
     align-items: flex-start;
     gap: 12px;
+    color: rgba(255, 255, 255, 0.5);
   }
 
   &__stat-left {
@@ -142,7 +159,6 @@
     font-size: 14px;
     line-height: 100%;
     letter-spacing: -0.05em;
-    color: rgba(255, 255, 255, 0.5);
     margin-bottom: 4px;
   }
 
@@ -151,7 +167,6 @@
     font-weight: 600;
     font-size: 48px;
     line-height: 100%;
-    color: rgba(255, 255, 255, 0.5);
   }
 
   &__stat-right {
@@ -166,7 +181,6 @@
     font-size: 40px;
     line-height: 100%;
     letter-spacing: -0.1em;
-    color: rgba(255, 255, 255, 0.5);
   }
 
   &__stat-desc {
@@ -175,7 +189,6 @@
     font-size: 16px;
     line-height: 130%;
     letter-spacing: -0.05em;
-    color: rgba(255, 255, 255, 0.7);
     margin-top: 6px;
   }
 

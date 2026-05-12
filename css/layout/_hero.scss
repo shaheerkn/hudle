@@ -95,9 +95,9 @@
   &__video {
     width: 100%;
     max-width: 975px;
-    margin-top: 60px;
+    margin-top: 60px;    
   }
-
+  
   &__video-wrapper {
     position: relative;
     width: 100%;
@@ -105,6 +105,24 @@
     border-radius: 16px;
     overflow: hidden;
     cursor: pointer;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #433457;
+      transition: background-color 0.2s;
+      opacity: 75%;
+      z-index: 1;
+    }
+
+    &:hover::before {
+      opacity: 95%;
+    }
   }
 
   &__video-thumbnail {
@@ -131,6 +149,7 @@
     align-items: center;
     justify-content: center;
     transition: background-color 0.2s;
+    z-index: 1;
 
     img {
       width: 20px;

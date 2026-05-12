@@ -432,15 +432,16 @@ button {
   padding: 100px 0 80px;
 }
 .footer__cta-title {
-  font-family: "Abhaya Libre", serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 600;
   font-size: 36px;
   line-height: 100%;
-  letter-spacing: -0.1em;
   color: #000;
   margin-bottom: 32px;
+  letter-spacing: -0.05em;
 }
 .footer__cta-title span {
+  font-family: "Abhaya Libre", serif;
   display: inline-block;
   font-size: 64px;
 }
@@ -724,6 +725,22 @@ button {
   border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
+  position: relative;
+}
+.hero__video-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #433457;
+  transition: background-color 0.2s;
+  opacity: 75%;
+  z-index: 1;
+}
+.hero__video-wrapper:hover::before {
+  opacity: 95%;
 }
 .hero__video-thumbnail {
   position: absolute;
@@ -748,6 +765,7 @@ button {
   align-items: center;
   justify-content: center;
   transition: background-color 0.2s;
+  z-index: 1;
 }
 .hero__play-btn img {
   width: 20px;
@@ -1134,8 +1152,8 @@ button {
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
-  width: 48px;
-  height: 48px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1159,6 +1177,7 @@ button {
   display: flex;
   flex-direction: column;
   font-size: 0;
+  min-width: 0;
 }
 .feature-v2__col-title {
   font-family: "Raleway", sans-serif;
@@ -1206,6 +1225,9 @@ button {
 .feature-v2__col-image {
   margin-top: auto;
 }
+.feature-v2__col-image img {
+  max-width: 100%;
+}
 @media (max-width: 992px) {
   .feature-v2 {
     padding: 0 0 80px;
@@ -1223,12 +1245,13 @@ button {
   .feature-v2__arrow {
     width: 40px;
     height: 40px;
+    border-width: 2px;
   }
   .feature-v2__arrow--prev {
-    left: 12px;
+    left: 5px;
   }
   .feature-v2__arrow--next {
-    right: 12px;
+    right: 5px;
   }
   .feature-v2__col-image {
     max-width: 100%;
@@ -1249,10 +1272,6 @@ button {
   }
   .feature-v2__col-title {
     font-size: 20px;
-  }
-  .feature-v2__arrow {
-    width: 36px;
-    height: 36px;
   }
 }
 
@@ -1356,6 +1375,7 @@ button {
 
 .cv-cta {
   margin: 100px 0;
+  cursor: pointer;
 }
 .cv-cta .container-l {
   padding-inline: 20px;
@@ -1366,6 +1386,9 @@ button {
   border-radius: 16px;
   padding: 100px 0;
   overflow: hidden;
+}
+.cv-cta__wrapper:hover {
+  background-color: #665077;
 }
 .cv-cta__bg {
   position: absolute;
@@ -1390,6 +1413,10 @@ button {
   width: 100%;
   height: 100%;
   background-color: rgba(113, 87, 135, 0.95);
+  transition: background-color 0.2s;
+}
+.cv-cta:hover .cv-cta__bg::before {
+  background-color: rgba(113, 87, 135, 0.99);
 }
 .cv-cta__content {
   position: relative;
@@ -1457,7 +1484,7 @@ button {
 }
 
 .ats {
-  padding: 100px 0;
+  padding: 200px 0;
   position: relative;
 }
 @media (max-width: 1200px) {
@@ -1476,7 +1503,6 @@ button {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
   object-fit: cover;
   z-index: -1;
 }
@@ -1565,6 +1591,13 @@ button {
 .ats__image img {
   width: 100%;
 }
+@media (min-width: 1128px) {
+  .ats__image {
+    position: absolute;
+    right: 0;
+    top: 100px;
+  }
+}
 @media (max-width: 992px) {
   .ats {
     padding: 80px 0;
@@ -1598,11 +1631,12 @@ button {
 
 .cta {
   position: relative;
-  padding-block: 80px 170px;
+  padding-block: 256px 170px;
 }
 @media (max-width: 1200px) {
   .cta {
     background-color: #0D0626;
+    padding-block: 80px 170px;
   }
 }
 @media (min-width: 1500px) {
@@ -1698,9 +1732,22 @@ button {
 }
 .cta__image {
   font-size: 0;
+  position: absolute;
+  top: 40px;
+  right: 0;
 }
 .cta__image img {
   width: 100%;
+}
+@media (max-width: 1200px) {
+  .cta__image {
+    max-width: 500px;
+  }
+}
+@media (max-width: 1024px) {
+  .cta__image {
+    position: relative;
+  }
 }
 .cta__stats {
   display: grid;
@@ -1708,12 +1755,18 @@ button {
   gap: 40px;
   margin-top: 30px;
   padding-top: 60px;
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin-top: 140px;
+}
+@media (max-width: 1200px) {
+  .cta__stats {
+    margin-top: 60px;
+  }
 }
 .cta__stat {
   display: flex;
   align-items: flex-start;
   gap: 12px;
+  color: rgba(255, 255, 255, 0.5);
 }
 .cta__stat-left {
   display: flex;
@@ -1726,7 +1779,6 @@ button {
   font-size: 14px;
   line-height: 100%;
   letter-spacing: -0.05em;
-  color: rgba(255, 255, 255, 0.5);
   margin-bottom: 4px;
 }
 .cta__stat-number {
@@ -1734,7 +1786,6 @@ button {
   font-weight: 600;
   font-size: 48px;
   line-height: 100%;
-  color: rgba(255, 255, 255, 0.5);
 }
 .cta__stat-right {
   display: flex;
@@ -1747,7 +1798,6 @@ button {
   font-size: 40px;
   line-height: 100%;
   letter-spacing: -0.1em;
-  color: rgba(255, 255, 255, 0.5);
 }
 .cta__stat-desc {
   font-family: "DM Sans", sans-serif;
@@ -1755,7 +1805,6 @@ button {
   font-size: 16px;
   line-height: 130%;
   letter-spacing: -0.05em;
-  color: rgba(255, 255, 255, 0.7);
   margin-top: 6px;
 }
 @media (max-width: 992px) {
@@ -2146,17 +2195,16 @@ button {
 }
 .audiences__card-label {
   font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 24px;
   line-height: 100%;
   letter-spacing: -0.05em;
-  color: #8894F9;
   margin-bottom: 16px;
 }
 .audiences__card-heading {
   font-family: "Abhaya Libre", serif;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 48px;
   line-height: 100%;
   letter-spacing: -0.1em;
   color: #000;
@@ -2166,8 +2214,7 @@ button {
   font-weight: 400;
   font-size: 16px;
   line-height: 130%;
-  letter-spacing: -0.05em;
-  color: #493934;
+  color: #000000;
   margin-top: 16px;
 }
 .audiences__card-btn {
@@ -2197,8 +2244,8 @@ button {
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
-  width: 48px;
-  height: 48px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -2243,6 +2290,13 @@ button {
   .audiences__arrow {
     width: 40px;
     height: 40px;
+    border-width: 2px;
+  }
+  .audiences__arrow--prev {
+    left: 5px;
+  }
+  .audiences__arrow--next {
+    right: 5px;
   }
 }
 @media (max-width: 576px) {
@@ -2270,10 +2324,6 @@ button {
   }
   .audiences__placeholder {
     min-height: 200px;
-  }
-  .audiences__arrow {
-    width: 36px;
-    height: 36px;
   }
 }
 
@@ -2371,6 +2421,11 @@ button {
 }
 .professionals__image {
   font-size: 0;
+  max-width: 445px;
+  max-height: 567px;
+  margin-left: auto;
+  border-radius: 16px;
+  overflow: hidden;
 }
 .professionals__image img {
   width: 100%;
@@ -2386,6 +2441,9 @@ button {
   }
   .professionals__title {
     font-size: 42px;
+  }
+  .professionals__image {
+    margin-left: 0;
   }
 }
 @media (max-width: 576px) {
@@ -2438,6 +2496,12 @@ button {
   line-height: 100%;
   letter-spacing: -0.05em;
   color: #000;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  height: 40px;
 }
 .features-grid__card-text {
   font-family: "DM Sans", sans-serif;
@@ -2469,6 +2533,9 @@ button {
   .features-grid__card {
     padding: 24px;
   }
+  .features-grid__card-title {
+    height: auto;
+  }
 }
 
 .latest-posts {
@@ -2494,8 +2561,8 @@ button {
   overflow: hidden;
 }
 .latest-posts__arrow {
-  width: 56px;
-  height: 56px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background: #2D1F41;
   border: 7px solid #fff;
