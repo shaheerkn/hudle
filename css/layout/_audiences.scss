@@ -108,11 +108,11 @@
 
   &__slider {
     overflow: hidden;
+    border-radius: 16px;
   }
 
   &__card {
     background-color: #F4EEEC;
-    border-radius: 16px;
     overflow: hidden;
     display: grid;
     grid-template-columns: 334px 1fr;

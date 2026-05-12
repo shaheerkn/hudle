@@ -1,6 +1,6 @@
 var audiencesSwiper = new Swiper('.audiences__slider', {
   slidesPerView: 1,
-  spaceBetween: 24,
+  spaceBetween: 0,
   navigation: {
     prevEl: '.audiences__arrow--prev',
     nextEl: '.audiences__arrow--next',

@@ -9,11 +9,11 @@
   &__slider {
     position: relative;
     overflow: hidden;
+    border-radius: 16px;
   }
 
   &__wrapper {
     background-color: #F4EEEC;
-    border-radius: 16px;
     padding: 60px 56px 0;
     overflow: hidden;
   }

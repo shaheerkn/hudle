@@ -946,10 +946,10 @@ button {
 .feature-v2__slider {
   position: relative;
   overflow: hidden;
+  border-radius: 16px;
 }
 .feature-v2__wrapper {
   background-color: #F4EEEC;
-  border-radius: 16px;
   padding: 60px 56px 0;
   overflow: hidden;
 }
@@ -1955,10 +1955,10 @@ button {
 }
 .audiences__slider {
   overflow: hidden;
+  border-radius: 16px;
 }
 .audiences__card {
   background-color: #F4EEEC;
-  border-radius: 16px;
   overflow: hidden;
   display: grid;
   grid-template-columns: 334px 1fr;
