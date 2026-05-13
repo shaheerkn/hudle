@@ -13,6 +13,10 @@ button {
   font-family: inherit;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .abhaya-libre-regular {
   font-family: "Abhaya Libre", serif;
   font-weight: 400;
@@ -172,7 +176,7 @@ button {
   align-items: center;
   gap: 6px;
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: -0.05em;
@@ -328,6 +332,9 @@ button {
     max-width: calc(100% - 40px);
     max-height: 100%;
   }
+  .footer__main-wrap > img {
+    display: none;
+  }
 }
 .footer__secondary-img {
   position: absolute;
@@ -363,6 +370,11 @@ button {
 @media (max-width: 992px) {
   .footer__banner {
     position: static;
+  }
+}
+@media (max-width: 768px) {
+  .footer__banner .container-l {
+    padding-inline: 0;
   }
 }
 .footer__banner-card {
@@ -430,6 +442,11 @@ button {
 }
 .footer__cta {
   padding: 100px 0 80px;
+}
+@media (max-width: 768px) {
+  .footer__cta {
+    padding-block: 50px;
+  }
 }
 .footer__cta-title {
   font-family: "Raleway", sans-serif;
@@ -668,7 +685,7 @@ button {
 }
 .hero__text {
   font-family: "DM Sans", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 158%;
   letter-spacing: -0.05em;
@@ -775,6 +792,12 @@ button {
 @media (max-width: 768px) {
   .hero {
     padding: 60px 0 80px;
+  }
+  .hero__content {
+    display: contents;
+  }
+  .hero__buttons {
+    order: 1;
   }
   .hero__title {
     font-size: 48px;
@@ -1167,8 +1190,18 @@ button {
 .feature-v2__arrow--prev {
   left: -10px;
 }
+@media (max-width: 1240px) {
+  .feature-v2__arrow--prev {
+    left: 0;
+  }
+}
 .feature-v2__arrow--next {
   right: -10px;
+}
+@media (max-width: 1240px) {
+  .feature-v2__arrow--next {
+    right: 0;
+  }
 }
 .feature-v2__arrow.swiper-button-disabled {
   display: none;
@@ -1248,10 +1281,10 @@ button {
     border-width: 2px;
   }
   .feature-v2__arrow--prev {
-    left: 5px;
+    left: 0;
   }
   .feature-v2__arrow--next {
-    right: 5px;
+    right: 0;
   }
   .feature-v2__col-image {
     max-width: 100%;
@@ -1604,15 +1637,21 @@ button {
   }
   .ats__grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 0;
   }
   .ats__title {
     font-size: 42px;
+  }
+  .ats__image {
+    margin-top: 50px;
   }
 }
 @media (max-width: 576px) {
   .ats {
     padding: 60px 0;
+  }
+  .ats__content {
+    display: contents;
   }
   .ats__tagline {
     font-size: 20px;
@@ -1620,9 +1659,13 @@ button {
   .ats__title {
     font-size: 32px;
   }
+  .ats__image {
+    margin-top: 40px;
+  }
   .ats__buttons {
     flex-direction: column;
     width: 100%;
+    order: 1;
   }
   .ats__btn {
     width: 100%;
@@ -1813,10 +1856,19 @@ button {
   }
   .cta__grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 0;
+  }
+  .cta__content {
+    display: contents;
   }
   .cta__title {
     font-size: 42px;
+  }
+  .cta__image {
+    margin-block: 40px;
+  }
+  .cta__buttons {
+    order: 1;
   }
   .cta__stats {
     grid-template-columns: repeat(2, 1fr);
@@ -2293,10 +2345,10 @@ button {
     border-width: 2px;
   }
   .audiences__arrow--prev {
-    left: 5px;
+    left: -18px;
   }
   .audiences__arrow--next {
-    right: 5px;
+    right: -18px;
   }
 }
 @media (max-width: 576px) {
@@ -2374,7 +2426,7 @@ button {
   align-items: center;
   gap: 12px;
   font-family: "DM Sans", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: -0.05em;
@@ -2450,12 +2502,22 @@ button {
   .professionals {
     margin: 60px 0;
   }
+  .professionals__grid {
+    gap: 0;
+  }
+  .professionals__content {
+    display: contents;
+  }
   .professionals__title {
     font-size: 32px;
+  }
+  .professionals__image {
+    margin-top: 40px;
   }
   .professionals__buttons {
     flex-direction: column;
     width: 100%;
+    order: 1;
   }
   .professionals__btn {
     width: 100%;
@@ -2513,7 +2575,7 @@ button {
   margin-top: 12px;
 }
 .features-grid__highlight {
-  color: #8894F9;
+  color: #5464E3;
 }
 @media (max-width: 992px) {
   .features-grid {
@@ -2580,8 +2642,18 @@ button {
 .latest-posts__arrow--prev {
   left: -28px;
 }
+@media (max-width: 1240px) {
+  .latest-posts__arrow--prev {
+    left: -18px;
+  }
+}
 .latest-posts__arrow--next {
   right: -28px;
+}
+@media (max-width: 1240px) {
+  .latest-posts__arrow--next {
+    right: -18px;
+  }
 }
 .latest-posts__arrow:hover {
   background: #3d2f51;
@@ -2666,7 +2738,15 @@ button {
     margin-bottom: 40px;
   }
   .latest-posts__arrow {
-    display: none;
+    width: 40px;
+    height: 40px;
+    border-width: 2px;
+  }
+  .latest-posts__arrow--prev {
+    left: -18px;
+  }
+  .latest-posts__arrow--next {
+    right: -18px;
   }
   .latest-posts__slider-wrap {
     gap: 0;

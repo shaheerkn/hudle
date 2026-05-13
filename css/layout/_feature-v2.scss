@@ -54,10 +54,18 @@
 
     &--prev {
       left: -10px;
+
+      @media (max-width: 1240px) {
+        left: 0;
+      }
     }
 
     &--next {
       right: -10px;
+
+      @media (max-width: 1240px) {
+        right: 0;
+      }
     }
 
     &.swiper-button-disabled {
@@ -152,11 +160,11 @@
       border-width: 2px;
 
       &--prev {
-        left: 5px;
+        left: 0;
       }
 
       &--next {
-        right: 5px;
+        right: 0;
       }
     }
 

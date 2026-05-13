@@ -198,11 +198,23 @@
 
     &__grid {
       grid-template-columns: 1fr;
-      gap: 40px;
+      gap: 0;
+    }
+
+    &__content {
+      display: contents;
     }
 
     &__title {
       font-size: 42px;
+    }
+
+    &__image {
+      margin-block: 40px;
+    }
+
+    &__buttons {
+      order: 1;
     }
 
     &__stats {

@@ -130,17 +130,25 @@
 
     &__grid {
       grid-template-columns: 1fr;
-      gap: 40px;
+      gap: 0;
     }
 
     &__title {
       font-size: 42px;
+    }
+
+    &__image {
+      margin-top: 50px;
     }
   }
 
   // Mobile
   @media (max-width: 576px) {
     padding: 60px 0;
+
+    &__content {
+      display: contents;
+    }
 
     &__tagline {
       font-size: 20px;
@@ -150,9 +158,14 @@
       font-size: 32px;
     }
 
+    &__image {
+      margin-top: 40px;
+    }
+
     &__buttons {
       flex-direction: column;
       width: 100%;
+      order: 1;
     }
 
     &__btn {
