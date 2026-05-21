@@ -124,7 +124,8 @@
 
   &__card-image {
     font-size: 0;
-    width: 334px;
+    width: 100%;
+    max-width: 334px;
     height: 487px;
     flex-shrink: 0;
 
