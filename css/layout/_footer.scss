@@ -2,9 +2,10 @@
 .footer {
   position: relative;
   overflow: hidden;
+  color: #fff;
 
   @media (max-width: 1200px) {
-    background: #F4EEEC;
+    background: #0D0626;
     padding-top: 80px;
   }
 
@@ -81,6 +82,7 @@
 
     @media (max-width: 1200px) {
       left: 0;
+      position: static;
     }
 
     @media (max-width: 992px) {
@@ -96,7 +98,7 @@
 
   &__banner-card {
     width: 414px;
-    background: #56405D;
+    background: #F4EEEC;
     border-radius: 16px;
     padding: 56px 48px;
     text-align: left;
@@ -114,17 +116,17 @@
     font-size: 24px;
     line-height: 100%;
     letter-spacing: -0.05em;
-    color: #fff;
+    color: #000;
     margin-bottom: 8px;
   }
 
   &__banner-title {
-    font-family: "Abhaya Libre", serif;
-    font-weight: 600;
+    font-family: "Judson", sans-serif;
+    font-weight: 400;
     font-size: 48px;
     line-height: 100%;
-    letter-spacing: -0.1em;
-    color: #fff;
+    letter-spacing: -5%;
+    color: #000;
     margin-bottom: 24px;
   }
 
@@ -134,14 +136,8 @@
     font-size: 16px;
     line-height: 158%;
     letter-spacing: -0.05em;
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 8px;
-
-    &--bold {
-      font-weight: 500;
-      color: #fff;
-      margin-bottom: 32px;
-    }
+    color:#101010;
+    margin-bottom: 30px;
   }
 
   &__banner-btn {
@@ -153,38 +149,33 @@
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 15px;
-    letter-spacing: -0.07em;
-    background: #fff;
-    color: #433457;
+    letter-spacing: -5%;
+    background: #433457;
+    color: #fff;
     transition: background-color 0.2s;
-
-    &:hover {
-      background: #f0f0f0;
-    }
   }
 
   // CTA Block
   &__cta {
-    padding: 100px 0 80px;
+    padding: 100px 0 60px;
 
     @media (max-width: 768px) {
-        padding-block: 50px;
+      padding-block: 50px;
     }
   }
 
   &__cta-title {
     font-family: "Raleway", sans-serif;
-    font-weight: 600;
-    font-size: 36px;
+    font-weight: 400;
+    font-size: 30px;
     line-height: 100%;
-    color: #000;
     margin-bottom: 32px;
-    letter-spacing: -0.05em;
+    letter-spacing: -5%;
     
     span {
-      font-family: "Abhaya Libre", serif;
+      font-family: "Judson", sans-serif;
       display: inline-block;
-      font-size: 64px;
+      font-size: 55px;
     }
   }
 
@@ -203,12 +194,12 @@
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-size: 15px;
-    letter-spacing: -0.07em;
+    letter-spacing: -5%;
     color: #fff;
     transition: background-color 0.2s;
 
     &--primary {
-      background: #8793F8;
+      background: #7281FF;
 
       &:hover {
         background: #6B72D6;
@@ -226,12 +217,12 @@
 
   // Main Footer
   &__main {
-    padding: 60px 0 48px;
+    padding: 0 0 48px;
   }
 
   &__grid {
     display: grid;
-    grid-template-columns: 300px 1fr;
+    grid-template-columns: 325px 1fr;
     gap: 60px;
   }
 
@@ -256,8 +247,6 @@
     font-size: 14px;
     line-height: 160%;
     letter-spacing: -0.05em;
-    color: #493934;
-    opacity: 0.6;
     margin-bottom: 16px;
   }
 
@@ -267,9 +256,6 @@
     font-size: 13px;
     line-height: 100%;
     letter-spacing: -0.05em;
-    color: #493934;
-    opacity: 0.4;
-    margin-bottom: 20px;
   }
 
   &__lang {
@@ -280,7 +266,7 @@
     font-weight: 500;
     font-size: 14px;
     letter-spacing: -0.05em;
-    color: #8894F9;
+    color: #6E67F1;
     transition: color 0.2s;
 
     svg {
@@ -294,21 +280,27 @@
     }
   }
 
+  &__social {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+    margin-block: 30px;
+  }
+
   // Link Columns
   &__links {
     display: grid;
-    grid-template-columns: repeat(3, 126px);
+    grid-template-columns: repeat(3, 170px);
     gap: 100px;
     justify-content: end;
   }
 
   &__col-title {
-    font-family: "Raleway", sans-serif;
-    font-weight: 600;
-    font-size: 15px;
+    font-family: "Judson", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
     line-height: 100%;
-    letter-spacing: -0.05em;
-    color: #433457;
+    letter-spacing: -5%;
     margin-bottom: 18px;
   }
 
@@ -324,19 +316,19 @@
     }
 
     a {
-      font-family: "DM Sans", sans-serif;
+      font-family: "Raleway", sans-serif;
       font-weight: 400;
-      font-size: 14px;
+      font-size: 15px;
       line-height: 100%;
-      letter-spacing: -0.05em;
-      color: #493934;
-      opacity: 0.6;
       transition: opacity 0.2s;
+      color: #fff;
 
       &:hover {
         opacity: 1;
       }
     }
+
+
   }
 
   // Tablet

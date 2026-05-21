@@ -20,20 +20,20 @@
   &__tagline {
     display: block;
     font-family: "Raleway", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
     line-height: 100%;
-    letter-spacing: -0.05em;
+    letter-spacing: -5%;
     color: #000;
     margin-bottom: 12px;
   }
 
   &__title {
-    font-family: "Abhaya Libre", serif;
-    font-weight: 600;
+    font-family: "Judson", sans-serif;
+    font-weight: 400;
     font-size: 55px;
     line-height: 100%;
-    letter-spacing: -0.1em;
+    letter-spacing: -5%;
     color: #000;
   }
 
@@ -79,7 +79,7 @@
     font-weight: 700;
     font-size: 15px;
     line-height: 100%;
-    letter-spacing: -0.07em;
+    letter-spacing: -5%;
     padding: 15px 24px;
     border-radius: 50px;
     white-space: nowrap;
@@ -87,7 +87,7 @@
 
     &--primary {
       color: #fff;
-      background-color: #8793F8;
+      background-color: #7281FF;
 
       &:hover {
         background-color: #7380e6;

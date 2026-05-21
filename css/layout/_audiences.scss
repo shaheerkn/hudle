@@ -1,5 +1,5 @@
 .audiences {
-  margin: 130px 0;
+  margin: 80px 0;
 
   .container-l {
     padding-inline: 20px;
@@ -35,7 +35,7 @@
   &__tagline {
     display: block;
     font-family: "Raleway", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
     line-height: 100%;
     letter-spacing: -0.05em;
@@ -44,20 +44,20 @@
   }
 
   &__title {
-    font-family: "Abhaya Libre", serif;
-    font-weight: 600;
-    font-size: 55px;
+    font-family: "Judson", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
     line-height: 100%;
-    letter-spacing: -0.1em;
+    letter-spacing: -5%;
     color: #000;
   }
 
   &__subtitle {
-    font-family: "DM Sans", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 130%;
-    letter-spacing: -0.05em;
+    letter-spacing: -5%;
     color: #000;
     margin-top: 20px;
   }
@@ -82,23 +82,24 @@
   }
 
   &__tab {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 100%;
     letter-spacing: -0.03em;
     padding: 10px 20px;
     border-radius: 50px;
-    border: 1px solid rgba(0, 0, 0, 33%);
+    border: 1px solid #9A8530;
     background-color: transparent;
-    color: rgba(0, 0, 0, 33%);
+    color: #000;
     cursor: pointer;
     transition: all 0.2s;
 
     &--active {
-      background-color: #F4EEEC;
-      border-color: #F4EEEC;
+      background-color: #E4D4CF;
+      border-color: #E4D4CF;
       color: #000000;
+      font-weight: 600;
     }
   }
 
@@ -142,28 +143,28 @@
 
   &__card-label {
     font-family: "Raleway", sans-serif;
-    font-weight: 600;
-    font-size: 24px;
+    font-weight: 500;
+    font-size: 20px;
     line-height: 100%;
-    letter-spacing: -0.05em;
+    letter-spacing: -5%;
     margin-bottom: 16px;
   }
 
   &__card-heading {
-    font-family: "Abhaya Libre", serif;
-    font-weight: 600;
-    font-size: 48px;
+    font-family: "Judson", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
     line-height: 100%;
-    letter-spacing: -0.1em;
+    letter-spacing: -5%;
     color: #000;
   }
 
   &__card-text {
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 130%;
-    color: #000000;
+    color: #493934;
     margin-top: 16px;
   }
 

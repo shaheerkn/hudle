@@ -99,21 +99,23 @@
   &__actions {
     display: flex;
     align-items: center;
-    gap: 24px;
-    padding-left: 60px;
-    border-left: 1px solid #E0D9E6;
+    gap: 15px;
+    padding-left: 23px;
+    border-left: 1px solid #433457;
   }
 
   &__login {
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 15px;
-    line-height: 100%;
-    letter-spacing: -0.07em;
+    letter-spacing: -5%;
     text-align: center;
     color: #000000;
     white-space: nowrap;
     transition: color 0.2s;
+    border: 1px solid #433457;
+    padding: 14px 43px;
+    border-radius: 23px;
 
     &:hover {
       color: #6B5587;
@@ -124,11 +126,11 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 15px;
     line-height: 100%;
-    letter-spacing: -0.07em;
+    letter-spacing: -5%;
     text-align: center;
     color: #fff;
     background-color: #433457;

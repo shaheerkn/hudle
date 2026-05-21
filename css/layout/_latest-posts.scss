@@ -6,14 +6,14 @@
   }
 
   &__title {
-    font-family: "Abhaya Libre", serif;
-    font-weight: 600;
-    font-size: 55px;
+    font-family: "Judson", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
     line-height: 100%;
-    letter-spacing: -0.1em;
+    letter-spacing: -5%;
     color: #000;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 36px;
   }
 
   &__slider-wrap {
@@ -96,32 +96,30 @@
   }
 
   &__card-tag {
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 600;
     font-size: 12px;
     line-height: 100%;
     letter-spacing: -0.05em;
     color: #fff;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 6px 12px;
     border-radius: 50px;
   }
 
   &__card-date {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 400;
-    font-size: 13px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
     line-height: 100%;
-    letter-spacing: -0.05em;
+    letter-spacing: -10%;
     color: rgba(255, 255, 255, 0.7);
   }
 
   &__card-title {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
     font-size: 18px;
     line-height: 130%;
-    letter-spacing: -0.05em;
+    letter-spacing: -5%;
     color: #fff;
   }
 

@@ -1,6 +1,7 @@
 .cta {
   position: relative;
   padding-block: 256px 170px;
+  margin-top: 166px;
 
   @media (max-width: 1200px) {
     background-color: #0D0626;
@@ -28,6 +29,7 @@
 
   .container-l {
     padding-inline: 20px;
+    position: relative;
   }
 
   &__grid {
@@ -45,36 +47,31 @@
   &__tagline {
     display: block;
     font-family: "Raleway", sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
     line-height: 100%;
-    letter-spacing: -0.05em;
+    letter-spacing: -5%;
     color: #fff;
     margin-bottom: 16px;
   }
 
   &__title {
-    font-family: "Abhaya Libre", serif;
-    font-weight: 600;
-    font-size: 55px;
+    font-family: "Judson", sans-serif;
+    font-weight: 400;
+    font-size: 45px;
     line-height: 100%;
-    letter-spacing: -0.1em;
+    letter-spacing: -5%;
     color: #fff;
   }
 
   &__text {
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 130%;
     letter-spacing: -0.05em;
     color: rgba(255, 255, 255, 0.7);
     margin-top: 24px;
-
-    &--bold {
-      font-weight: 700;
-      color: #fff;
-    }
   }
 
   &__buttons {
@@ -88,11 +85,11 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-family: "Poppins", sans-serif;
+    font-family: "Railway", sans-serif;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 100%;
-    letter-spacing: -0.07em;
+    letter-spacing: -5%;
     padding: 15px 24px;
     border-radius: 50px;
     white-space: nowrap;
@@ -100,7 +97,7 @@
 
     &--primary {
       color: #fff;
-      background-color: #8793F8;
+      background-color: #7281FF;
 
       &:hover {
         background-color: #7380e6;
@@ -111,7 +108,7 @@
   &__image {
     font-size: 0;
     position: absolute;
-    top: 40px;
+    top: -290px;
     right: 0;
 
     img {
@@ -119,7 +116,9 @@
     }
 
     @media (max-width: 1200px) {
-      max-width: 500px;
+      max-width: 250px;
+      top: 0;
+      right: 20px;
     }
 
     @media (max-width: 1024px) {
@@ -164,7 +163,7 @@
 
   &__stat-number {
     font-family: "Raleway", serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 48px;
     line-height: 100%;
   }
@@ -176,19 +175,19 @@
   }
 
   &__stat-word {
-    font-family: "Abhaya Libre", serif;
-    font-weight: 600;
+    font-family: "Judson", sans-serif;
+    font-weight: 400;
     font-size: 40px;
     line-height: 100%;
-    letter-spacing: -0.1em;
+    letter-spacing: -5%;
   }
 
   &__stat-desc {
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 130%;
-    letter-spacing: -0.05em;
+    letter-spacing: -5%;
     margin-top: 6px;
   }
 
