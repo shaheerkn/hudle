@@ -111,6 +111,9 @@
     margin-top: auto;
     width: calc(100% + 72px);
     margin-left: -36px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 
     img {
       max-width: 100%;
