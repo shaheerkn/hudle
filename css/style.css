@@ -397,7 +397,7 @@ body {
 .footer__banner-tagline {
   display: block;
   font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 24px;
   line-height: 100%;
   letter-spacing: -0.05em;
@@ -415,7 +415,7 @@ body {
 }
 .footer__banner-text {
   font-family: "DM Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   line-height: 158%;
   letter-spacing: -0.05em;
@@ -508,7 +508,7 @@ body {
 }
 .footer__desc {
   font-family: "DM Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 14px;
   line-height: 160%;
   letter-spacing: -0.05em;
@@ -516,7 +516,7 @@ body {
 }
 .footer__copyright {
   font-family: "DM Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 13px;
   line-height: 100%;
   letter-spacing: -0.05em;
@@ -554,7 +554,7 @@ body {
 }
 .footer__col-title {
   font-family: "Judson", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 24px;
   line-height: 100%;
   letter-spacing: -5%;
@@ -666,7 +666,7 @@ body {
   color: #000000;
   margin-bottom: 12px;
   display: inline-block;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 28px;
   letter-spacing: -5%;
 }
@@ -681,10 +681,10 @@ body {
 }
 .hero__text {
   font-family: "DM Sans", sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 20px;
   line-height: 158%;
-  letter-spacing: -5%;
+  letter-spacing: -3%;
   text-align: center;
   color: #000000;
   margin-top: 30px;
@@ -749,7 +749,7 @@ body {
   height: 100%;
   background-color: #433457;
   transition: background-color 0.2s;
-  opacity: 75%;
+  opacity: 0%;
   z-index: 1;
 }
 .hero__video-wrapper:hover::before {
@@ -867,7 +867,8 @@ body {
 }
 @media (min-width: 1200px) {
   .process--pull-up {
-    margin-top: -150px;
+    margin-top: -300px;
+    padding-top: 380px;
   }
 }
 .process__background {
@@ -894,7 +895,7 @@ body {
 .process__tagline {
   display: block;
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 24px;
   line-height: 100%;
   letter-spacing: -5%;
@@ -916,7 +917,7 @@ body {
   text-align: center;
   color: #fff;
   margin-bottom: 60px;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
   letter-spacing: -5%;
 }
@@ -937,7 +938,7 @@ body {
   margin-bottom: 28px;
 }
 .process__icon img {
-  width: 100%;
+  width: 70%;
   height: 100%;
 }
 .process__item-text {
@@ -950,7 +951,7 @@ body {
 }
 .process__bottom-text {
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 24px;
   line-height: 100%;
   letter-spacing: -0.05em;
@@ -1001,6 +1002,18 @@ body {
   }
 }
 
+.features {
+  margin: 100px 0;
+}
+@media (max-width: 576px) {
+  .features {
+    margin: 60px 0;
+  }
+}
+.features__panel[hidden] {
+  display: none;
+}
+
 .feature-v1 {
   margin: 66px 0;
 }
@@ -1022,7 +1035,7 @@ body {
 .feature-v1__tagline {
   display: inline-block;
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 24px;
   line-height: 100%;
   letter-spacing: -0.05em;
@@ -1031,7 +1044,7 @@ body {
 }
 .feature-v1__subtitle {
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 24px;
   letter-spacing: -5%;
   color: #000000;
@@ -1056,8 +1069,8 @@ body {
 }
 .feature-v1__card-title {
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 26px;
+  font-weight: 400;
+  font-size: 32px;
   line-height: 100%;
   letter-spacing: -5%;
   color: #000000;
@@ -1065,7 +1078,7 @@ body {
 }
 .feature-v1__card-text {
   font-family: "DM Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
   line-height: 130%;
   letter-spacing: -0.05em;
@@ -1191,8 +1204,8 @@ body {
 }
 .feature-v2__col-title {
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
-  font-size: 28px;
+  font-weight: 400;
+  font-size: 32px;
   line-height: 100%;
   letter-spacing: -5%;
   color: #433457;
@@ -1200,7 +1213,7 @@ body {
 }
 .feature-v2__col-text {
   font-family: "DM Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 18px;
   line-height: 130%;
   letter-spacing: -0.05em;
@@ -1340,7 +1353,7 @@ body {
 }
 .ats__tagline {
   font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 24px;
   line-height: 100%;
   letter-spacing: -5%;
@@ -1722,7 +1735,7 @@ body {
 .audiences__tagline {
   display: block;
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 24px;
   line-height: 100%;
   letter-spacing: -0.05em;
@@ -1739,7 +1752,7 @@ body {
 }
 .audiences__subtitle {
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 24px;
   line-height: 130%;
   letter-spacing: -5%;
@@ -1765,7 +1778,7 @@ body {
 }
 .audiences__tab {
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 18px;
   line-height: 100%;
   letter-spacing: -0.03em;
@@ -1818,7 +1831,7 @@ body {
 }
 .audiences__card-label {
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 20px;
   line-height: 100%;
   letter-spacing: -5%;
@@ -1970,7 +1983,7 @@ body {
 .professionals__tagline {
   display: block;
   font-family: "Raleway", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 24px;
   line-height: 100%;
   letter-spacing: -5%;
@@ -1980,7 +1993,7 @@ body {
 .professionals__title {
   font-family: "Judson", sans-serif;
   font-weight: 400;
-  font-size: 55px;
+  font-size: 48px;
   line-height: 100%;
   letter-spacing: -5%;
   color: #000;
@@ -1998,7 +2011,7 @@ body {
   align-items: center;
   gap: 12px;
   font-family: "DM Sans", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: -0.05em;

@@ -1,3 +1,15 @@
+.features {
+  margin: 100px 0;
+
+  @media (max-width: 576px) {
+    margin: 60px 0;
+  }
+
+  &__panel[hidden] {
+    display: none;
+  }
+}
+
 .feature-v1 {
   margin: 66px 0;
 
@@ -22,7 +34,7 @@
   &__tagline {
     display: inline-block;
     font-family: "Raleway", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 24px;
     line-height: 100%;
     letter-spacing: -0.05em;
@@ -32,7 +44,7 @@
 
   &__subtitle {
     font-family: "Raleway", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 24px;
     letter-spacing: -5%;
     color: #000000;
@@ -61,8 +73,8 @@
 
   &__card-title {
     font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    font-size: 26px;
+    font-weight: 400;
+    font-size: 32px;
     line-height: 100%;
     letter-spacing: -5%;
     color: #000000;
@@ -71,7 +83,7 @@
 
   &__card-text {
     font-family: "DM Sans", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 18px;
     line-height: 130%;
     letter-spacing: -0.05em;
