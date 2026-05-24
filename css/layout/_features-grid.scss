@@ -72,12 +72,8 @@
   @media (max-width: 576px) {
     margin: 60px 0;
 
-    &__grid {
-      grid-template-columns: 1fr;
-    }
-
     &__card {
-      padding: 24px;
+      padding: 12px;
     }
 
     &__card-title {

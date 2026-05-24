@@ -3,6 +3,10 @@
 
   @media (max-width: 576px) {
     margin: 60px 0;
+
+    .audiences__tabs-label {
+      display: none;
+    }
   }
 
   &__panel[hidden] {
@@ -195,5 +199,6 @@
     &__card-title {
       font-size: 20px;
     }
+
   }
 }

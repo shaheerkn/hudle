@@ -69,6 +69,11 @@
     gap: 10px;
     margin-top: 40px;
     flex-wrap: wrap;
+
+    @media (max-width: 576px) {
+      padding-left: 0;
+      width: calc(100% + 20px);
+    }
   }
 
   &__tabs-label {
@@ -79,6 +84,10 @@
     letter-spacing: -0.05em;
     color: #000;
     margin-right: 4px;
+
+    @media (max-width: 576px) {
+      display: none;
+    }
   }
 
   &__tab {
@@ -110,6 +119,7 @@
   &__slider {
     overflow: hidden;
     border-radius: 16px;
+    background-color: #F4EEEC;
   }
 
   &__card {
@@ -239,7 +249,7 @@
     }
 
     &__card-image {
-      height: 300px;
+      display: none;
     }
 
     &__card-content {
@@ -280,11 +290,22 @@
 
     &__tabs {
       gap: 8px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      padding-inline: 0 20px;
+      overflow-x: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
 
     &__tab {
-      font-size: 12px;
-      padding: 8px 14px;
+      font-size: 16px;
+      padding: 12px 30px;
+      white-space: nowrap;
     }
 
     &__card-content {
@@ -298,9 +319,17 @@
     &__placeholder {
       min-height: 200px;
     }
+
+    &__arrow {
+      display: none;
+    }
   }
 }
 
 .features .audiences__tabs {
   margin-top: 80px;
+  @media (max-width: 576px) {
+    padding-inline: 20px;
+    width: 100%;
+  }
 }

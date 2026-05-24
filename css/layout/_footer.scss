@@ -391,6 +391,8 @@
 
     &__cta-actions {
       flex-direction: column;
+      width: 70%;
+      margin-inline: auto;
     }
 
     &__cta-btn {
@@ -402,7 +404,7 @@
     }
 
     &__links {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: 28px;
     }
   }

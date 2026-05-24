@@ -160,12 +160,14 @@
 
     &__image {
       margin-top: 40px;
+      display: none;
     }
 
     &__buttons {
       flex-direction: column;
-      width: 100%;
+      width: 70%;
       order: 1;
+      margin-inline: auto;
     }
 
     &__btn {
