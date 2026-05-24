@@ -1170,6 +1170,9 @@ body {
   .feature-v1__tagline {
     font-size: 20px;
   }
+  .feature-v1__subtitle {
+    font-size: 20px;
+  }
   .feature-v1__heading {
     font-size: 32px;
   }
@@ -1788,6 +1791,11 @@ body {
   letter-spacing: -5%;
   color: #000;
   margin-top: 20px;
+}
+@media (max-width: 576px) {
+  .audiences__subtitle {
+    font-size: 20px;
+  }
 }
 .audiences__tabs {
   display: flex;
