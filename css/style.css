@@ -1324,7 +1324,8 @@ body {
     margin-bottom: 32px;
   }
   .feature-v2__col-title {
-    font-size: 20px;
+    font-size: 22px;
+    color: #000;
   }
 }
 
