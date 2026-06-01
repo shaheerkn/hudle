@@ -70,6 +70,7 @@
     align-items: center;
     gap: 50px;
     list-style: none;
+    padding-block: 13px;
   }
 
   &__item--dropdown {
@@ -193,7 +194,8 @@
   @media (min-width: 993px) {
     &__item--dropdown.is-open .navbar__link--dropdown,
     &__item--dropdown:focus-within .navbar__link--dropdown {
-      color: #6B5587;
+      color: #4603FA;
+      font-weight: 700;
 
       .navbar__chevron {
         transform: rotate(180deg);
@@ -350,7 +352,6 @@ $megamenu-duration: 0.32s;
     grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1.2fr);
     align-items: start;
     gap: 100px;
-    min-height: 338px;
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -389,7 +390,7 @@ $megamenu-duration: 0.32s;
     font-size: 16px;
     line-height: normal;
     letter-spacing: -0.05em;
-    color: #000;
+    color: #4603FA;
 
     &--cta {
       line-height: 1.25;
@@ -402,7 +403,7 @@ $megamenu-duration: 0.32s;
     margin: 0 0 16px;
     font-family: "Raleway", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.35;
     letter-spacing: -0.03em;
     color: #000;
@@ -485,7 +486,7 @@ $megamenu-duration: 0.32s;
     top: 100%;
     left: 0;
     right: 0;
-    z-index: 99;
+    z-index: -1;
     padding: 12px 20px 20px;
   }
 

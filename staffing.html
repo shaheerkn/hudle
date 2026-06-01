@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Hudle - Homepage</title>
+</head>
+<body>
+  <header class="navbar">
+    <div class="container-l">
+      <a href="/" class="navbar__logo">
+        <img src="assets/images/main-logo.svg" alt="Hudle">
+      </a>
+
+      <button class="navbar__toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="navbar__nav">
+        <ul class="navbar__list">
+          <li class="navbar__item navbar__item--dropdown">
+            <button type="button" class="navbar__link navbar__link--dropdown" aria-expanded="false" aria-controls="navbar-megamenu" data-megamenu="product" id="product-menu-trigger">
+              Product
+              <svg class="navbar__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </li>
+          <li class="navbar__item navbar__item--dropdown">
+            <button type="button" class="navbar__link navbar__link--dropdown" aria-expanded="false" aria-controls="navbar-megamenu" data-megamenu="solutions" id="solutions-menu-trigger">
+              Solutions
+              <svg class="navbar__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </li>
+          <li class="navbar__item navbar__item--dropdown">
+            <button type="button" class="navbar__link navbar__link--dropdown" aria-expanded="false" aria-controls="navbar-megamenu" data-megamenu="resources" id="resources-menu-trigger">
+              Resources
+              <svg class="navbar__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </li>
+        </ul>
+
+        <div class="navbar__megamenu-slot" id="navbar-megamenu-slot">
+          <div class="megamenu" id="navbar-megamenu" aria-hidden="true">
+            <div class="megamenu__shell">
+              <div class="megamenu__viewport">
+                <div class="megamenu__content is-active" data-megamenu-content="product" role="region" aria-labelledby="product-menu-trigger">
+                  <section class="megamenu__section megamenu__section--features">
+                    <h3 class="megamenu__title">Features</h3>
+                    <div class="megamenu__divider" aria-hidden="true"></div>
+                    <div class="megamenu__columns">
+                      <ul class="megamenu__links">
+                        <li>
+                          <a href="#" class="megamenu__link">
+                            <span class="megamenu__link-title">Talentpool</span>
+                            <span class="megamenu__link-desc">Dynamisch overzicht in Kandidaatpool</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="megamenu__link">
+                            <span class="megamenu__link-title">Staffing Perfomance</span>
+                            <span class="megamenu__link-desc">Inzicht in kandidaat performance</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="megamenu__link">
+                            <span class="megamenu__link-title">Profielen en Reminders</span>
+                            <span class="megamenu__link-desc">Nooit meer achter incomplete CV’s aan</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <ul class="megamenu__links">
+                        <li>
+                          <a href="#" class="megamenu__link">
+                            <span class="megamenu__link-title">Detachering Tools</span>
+                            <span class="megamenu__link-desc">Alles om voor je detachering workflow</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="megamenu__link">
+                            <span class="megamenu__link-title">Vacature Match</span>
+                            <span class="megamenu__link-desc">Van Vacature naar Match in seconden</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="megamenu__link">
+                            <span class="megamenu__link-title">Hudle Link</span>
+                            <span class="megamenu__link-desc">Veilig delen, warmer opvolgen</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
+
+                  <section class="megamenu__section megamenu__section--compliance">
+                    <h3 class="megamenu__title">Compliance</h3>
+                    <div class="megamenu__divider" aria-hidden="true"></div>
+                    <ul class="megamenu__links">
+                      <li>
+                        <a href="#" class="megamenu__link">
+                          <span class="megamenu__link-title">Privacy & Security</span>
+                          <span class="megamenu__link-desc">Compliance zonder complexiteit</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="megamenu__link">
+                          <span class="megamenu__link-title">VOG Management</span>
+                          <span class="megamenu__link-desc">Altijd inzicht in geldige VOG’s</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="megamenu__link">
+                          <span class="megamenu__link-title">Auditlogs</span>
+                          <span class="megamenu__link-desc">Zie precies wie wat doett</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </section>
+
+                  <section class="megamenu__section megamenu__section--cta">
+                    <h3 class="megamenu__title megamenu__title--cta">Hudle vs ATS</h3>
+                    <p class="megamenu__cta-subtitle">De workflow voor je ...</p>
+                    <div class="megamenu__cta-visual">
+                      <img src="assets/images/megamenu-1.svg" alt="" width="193" height="217">
+                    </div>
+                  </section>
+                </div>
+
+                <div class="megamenu__content" data-megamenu-content="solutions" role="region" aria-labelledby="solutions-menu-trigger">
+                  <section class="megamenu__section megamenu__section--features">
+                    <h3 class="megamenu__title">Rollen</h3>
+                    <div class="megamenu__divider" aria-hidden="true"></div>
+                    <div class="megamenu__columns">
+                      <ul class="megamenu__links">
+                        <li>
+                          <a href="#" class="megamenu__link">
+                            <span class="megamenu__link-title">Recruiter</span>
+                            <span class="megamenu__link-desc">Versnel matching en plaatsing</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="megamenu__link">
+                            <span class="megamenu__link-title">Resource Manager</span>
+                            <span class="megamenu__link-desc">Altijd inzicht in inzetbaarheid</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="megamenu__link">
+                            <span class="megamenu__link-title">Candidate</span>
+                            <span class="megamenu__link-desc">Ownership over eigen data</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <ul class="megamenu__links">
+                        <li>
+                          <a href="#" class="megamenu__link">
+                            <span class="megamenu__link-title">Management en Directie</span>
+                            <span class="megamenu__link-desc">Grip op groei en capaciteit</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="megamenu__link">
+                            <span class="megamenu__link-title">Compliancy Officer</span>
+                            <span class="megamenu__link-desc">Werk gecontroleerd met kandidaatdata</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" class="megamenu__link">
+                            <span class="megamenu__link-title">Opdrachtgever</span>
+                            <span class="megamenu__link-desc">Sneller toegang tot beter talent</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
+
+                  <section class="megamenu__section megamenu__section--compliance">
+                    <h3 class="megamenu__title">Industrie&euml;n</h3>
+                    <div class="megamenu__divider" aria-hidden="true"></div>
+                    <ul class="megamenu__links">
+                      <li>
+                        <a href="#" class="megamenu__link">
+                          <span class="megamenu__link-title">Detacheringsbureau</span>
+                          <span class="megamenu__link-desc">Detacheer gemakkelijk eigen personeel</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="megamenu__link">
+                          <span class="megamenu__link-title">Uitzendbureau</span>
+                          <span class="megamenu__link-desc">Plaats sneller flexkrachten</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="megamenu__link">
+                          <span class="megamenu__link-title">Intermediair</span>
+                          <span class="megamenu__link-desc">Match eenvoudig freelancers</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </section>
+
+                  <section class="megamenu__section megamenu__section--cta">
+                    <h3 class="megamenu__title megamenu__title--cta">Thought Leadership</h3>
+                    <p class="megamenu__cta-subtitle">De toekomst van Staffing & Recruitment</p>
+                    <div class="megamenu__cta-visual">
+                      <img src="assets/images/megamenu-1.svg" alt="" width="193" height="217">
+                    </div>
+                  </section>
+                </div>
+
+                <div class="megamenu__content megamenu__content--resources" data-megamenu-content="resources" role="region" aria-labelledby="resources-menu-trigger">
+                  <section class="megamenu__section">
+                    <h3 class="megamenu__title">Learn</h3>
+                    <div class="megamenu__divider" aria-hidden="true"></div>
+                    <ul class="megamenu__links megamenu__links--simple">
+                      <li><a href="#" class="megamenu__link megamenu__link--simple">Blog</a></li>
+                      <li><a href="#" class="megamenu__link megamenu__link--simple">Releases</a></li>
+                      <li><a href="#" class="megamenu__link megamenu__link--simple">Roadmap</a></li>
+                      <li><a href="#" class="megamenu__link megamenu__link--simple">Customer Stories</a></li>
+                    </ul>
+                  </section>
+
+                  <section class="megamenu__section">
+                    <h3 class="megamenu__title">Support</h3>
+                    <div class="megamenu__divider" aria-hidden="true"></div>
+                    <ul class="megamenu__links megamenu__links--simple">
+                      <li><a href="#" class="megamenu__link megamenu__link--simple">Support</a></li>
+                      <li><a href="#" class="megamenu__link megamenu__link--simple">Help Center</a></li>
+                      <li><a href="#" class="megamenu__link megamenu__link--simple">Developer</a></li>
+                    </ul>
+                  </section>
+
+                  <section class="megamenu__section">
+                    <h3 class="megamenu__title">Company</h3>
+                    <div class="megamenu__divider" aria-hidden="true"></div>
+                    <ul class="megamenu__links megamenu__links--simple">
+                      <li><a href="#" class="megamenu__link megamenu__link--simple">Contact</a></li>
+                      <li><a href="#" class="megamenu__link megamenu__link--simple">About us</a></li>
+                      <li><a href="#" class="megamenu__link megamenu__link--simple">Jobs</a></li>
+                    </ul>
+                  </section>
+
+                  <section class="megamenu__section megamenu__section--cta megamenu__section--demo">
+                    <h3 class="megamenu__title megamenu__title--cta">Demo aanvragen</h3>
+                    <div class="megamenu__cta-card">
+                      <img src="assets/images/resources-megamenu.jpg" alt="Hudle Talentpool dashboard preview">
+                      <a href="#" class="megamenu__cta-btn">Boek een demo</a>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="navbar__actions">
+          <a href="#" class="navbar__login">Login</a>
+          <a href="#" class="navbar__btn">Boek een demo</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero--v2">
+    <div class="hero-v2">
+      <div class="container-l">
+        <div class="hero-v2__grid">
+          <div class="hero-v2__content">
+            <span class="hero-v2__tagline" data-aos="fade-up" data-aos-delay="300">Meer grip op</span>
+            <h1 class="hero-v2__title" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">kandidaatperformance</h1>
+            <p class="hero-v2__text" data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+              Krijg realtime inzicht in hoe professionals presteren, hoe opdrachtgevers reageren en hoe lang kandidaten beschikbaar zijn.
+
+              <br> <br>
+
+              Zodat staffing teams sneller kunnen bijsturen en beter kunnen voorspellen.
+            </p>
+            <div class="hero-v2__buttons" data-aos="fade-up" data-aos-delay="600" data-aos-duration="700">
+              <a href="#" class="hero-v2__btn hero-v2__btn--primary">Boek een demo</a>
+              <a href="#" class="hero-v2__btn hero-v2__btn--secondary">Bekijk features</a>
+            </div>
+          </div>
+          <div class="hero-v2__image" data-aos="fade-left" data-aos-delay="400" data-aos-duration="700">
+            <img src="assets/images/staffing-hero-img.svg" alt="Staffing hero">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="img-w-text-wrapper">
+    <img src="assets/images/img-w-text-bg.svg" alt="" class="img-w-text-wrapper__bg">
+    <section class="img-w-text img-w-text--reverse">
+      <div class="container-l">
+        <div class="img-w-text__grid">
+          <div class="img-w-text__image" data-aos="fade-right" data-aos-delay="300" data-aos-duration="700">
+            <img src="assets/images/img-w-text-1.svg" alt="">
+          </div>
+          <div class="img-w-text__content">
+            <span class="img-w-text__tagline" data-aos="fade-up" data-aos-delay="300">Resource Optimization</span>
+            <h2 class="img-w-text__title" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">Benut je kandidatenpool slimmer</h2>
+            <p class="img-w-text__text" data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+              Hudle helpt staffing teams om beschikbare professionals strategischer in te zetten op basis van skills, beschikbaarheid en actuele vraag vanuit opdrachtgevers. 
+              <br> <br>
+              Hierdoor wordt capaciteit efficiënter benut en kunnen recruiters sneller schakelen op nieuwe aanvragen.
+              <br><br>
+              Zo verandert je kandidatenpool van een statische database naar een actieve operationele workflow.
+            </p>
+            <div class="img-w-text__buttons" data-aos="fade-up" data-aos-delay="600" data-aos-duration="700">
+              <a href="#" class="img-w-text__btn img-w-text__btn--primary">Boek een demo</a>
+              <a href="#" class="img-w-text__btn img-w-text__btn--secondary">Bekijk features</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="img-w-text">
+      <div class="container-l">
+        <div class="img-w-text__grid">
+          <div class="img-w-text__image" data-aos="fade-right" data-aos-delay="300" data-aos-duration="700">
+            <img src="assets/images/img-w-text-2.svg" alt="">
+          </div>
+          <div class="img-w-text__content">
+            <span class="img-w-text__tagline" data-aos="fade-up" data-aos-delay="300">Time on Bench</span>
+            <h2 class="img-w-text__title" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">Voorkom onnodige bankzitters</h2>
+            <p class="img-w-text__text" data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+              Krijg realtime inzicht in beschikbaarheid, inzetbaarheid én opdrachtgeverfeedback van professionals binnen je kandidatenpool. Zie sneller welke kandidaten goed presteren, waar opvolging nodig is en voorkom onnodige bankzitters.
+  
+              <br> <br>
+  
+              Hudle helpt staffing teams om inzetbaarheid inzichtelijker te maken en professionals sneller opnieuw op opdrachten te plaatsen.
+            </p>
+            <div class="img-w-text__buttons" data-aos="fade-up" data-aos-delay="600" data-aos-duration="700">
+              <a href="#" class="img-w-text__btn img-w-text__btn--primary">Boek een demo</a>
+              <a href="#" class="img-w-text__btn img-w-text__btn--secondary">Bekijk features</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="img-w-text img-w-text--reverse">
+      <div class="container-l">
+        <div class="img-w-text__grid">
+          <div class="img-w-text__image" data-aos="fade-right" data-aos-delay="300" data-aos-duration="700">
+            <img src="assets/images/img-w-text-3.svg" alt="">
+          </div>
+          <div class="img-w-text__content">
+            <span class="img-w-text__tagline" data-aos="fade-up" data-aos-delay="300">Realtime Feedback</span>
+            <h2 class="img-w-text__title" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">Meet kandidaatfeedback direct vanuit opdrachtgevers</h2>
+            <p class="img-w-text__text" data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+              Hudle verzamelt realtime feedback vanuit Hudle Links door opdrachtgevers zodat recruiters en resourcemanagers direct inzicht krijgen in hoe kandidaten worden beoordeeld tijdens het selectieproces. 
+              <br> <br>
+              Hierdoor ontstaat meer grip op kandidaatkwaliteit, opvolging en commerciële voortgang binnen recruitmentprocessen.
+            </p>
+            <div class="img-w-text__buttons" data-aos="fade-up" data-aos-delay="600" data-aos-duration="700">
+              <a href="#" class="img-w-text__btn img-w-text__btn--primary">Demo aanvragen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="img-w-text">
+      <div class="container-l">
+        <div class="img-w-text__grid">
+          <div class="img-w-text__image" data-aos="fade-right" data-aos-delay="300" data-aos-duration="700">
+            <img src="assets/images/img-w-text-4.svg" alt="">
+          </div>
+          <div class="img-w-text__content">
+            <span class="img-w-text__tagline" data-aos="fade-up" data-aos-delay="300">Management & KPI’s</span>
+            <h2 class="img-w-text__title" data-aos="fade-up" data-aos-delay="400" data-aos-duration="500">Meer grip op recruitment KPI’s</h2>
+            <p class="img-w-text__text" data-aos="fade-up" data-aos-delay="500" data-aos-duration="600">
+              Krijg inzicht in recruiter performance, opvolging, kandidaatactiviteit en plaatsingsresultaten vanuit één centrale omgeving. Dashboards en rapportages helpen managementteams om recruitmentprocessen beter meetbaar, voorspelbaar en schaalbaar te maken.
+              <br> <br>
+              Hierdoor ontstaat meer controle over operationele prestaties én commerciële groei.
+            </p>
+            <div class="img-w-text__buttons" data-aos="fade-up" data-aos-delay="600" data-aos-duration="700">
+              <a href="#" class="img-w-text__btn img-w-text__btn--primary">Demo aanvragen</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+  <section class="professionals">
+    <div class="container-l">
+      <div class="professionals__grid">
+        <div class="professionals__content">
+          <span class="professionals__tagline" data-aos="fade-up" data-aos-delay="300" data-aos-duration="500">Jouw succes is onze</span>
+          <h2 class="professionals__title" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">Prioriteit</h2>
+          <ul class="professionals__list">
+            <li class="professionals__list-item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="700">
+              <img src="assets/images/icon-tick.svg" alt="" class="professionals__list-icon">
+              Geen CV's en persoonsgegevens meer heen en weer via e-mail
+            </li>
+            <li class="professionals__list-item" data-aos="fade-up" data-aos-delay="500" data-aos-duration="700">
+              <img src="assets/images/icon-tick.svg" alt="" class="professionals__list-icon">
+              Altijd actuele kandidaat- en VOG-data
+            </li>
+            <li class="professionals__list-item" data-aos="fade-up" data-aos-delay="600" data-aos-duration="700">
+              <img src="assets/images/icon-tick.svg" alt="" class="professionals__list-icon">
+              Vind met onze AI-tools de juiste kandidaten voor een vacature
+            </li>
+            <li class="professionals__list-item" data-aos="fade-up" data-aos-delay="700" data-aos-duration="700">
+              <img src="assets/images/icon-tick.svg" alt="" class="professionals__list-icon">
+              Realtime feedback van opdrachtgevers voor snellere, warme opvolging
+            </li>
+            <li class="professionals__list-item" data-aos="fade-up" data-aos-delay="800" data-aos-duration="700">
+              <img src="assets/images/icon-tick.svg" alt="" class="professionals__list-icon">
+              Benut verborgen potentie binnen je eigen netwerk
+            </li>
+            <li class="professionals__list-item" data-aos="fade-up" data-aos-delay="900" data-aos-duration="700">
+              <img src="assets/images/icon-tick.svg" alt="" class="professionals__list-icon">
+              Schakel sneller richting opdrachtgevers en vergroot je slagkracht
+            </li>
+            <li class="professionals__list-item" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700">
+              <img src="assets/images/icon-tick.svg" alt="" class="professionals__list-icon">
+              GDPR en AVG-vriendelijk werken
+            </li>
+          </ul>
+          <div class="professionals__buttons">
+            <a href="#" class="professionals__btn professionals__btn--secondary">Bekijk features</a>
+          </div>
+        </div>
+        <div class="professionals__image">
+          <img src="assets/images/feature-w-img-img.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features-grid">
+    <div class="container-l">
+      <div class="features-grid__grid">
+        <div class="features-grid__card" data-aos="fade-up" data-aos-delay="700" data-aos-duration="700">
+          <div class="features-grid__card-icon">
+            <img src="assets/images/icon-feature-3.svg" alt="">
+          </div>
+          <h3 class="features-grid__card-title">Tot 60% sneller opvolgen</h3>
+          <p class="features-grid__card-text">Realtime feedback versnelt commerciële opvolging.</p>
+        </div>
+
+        <div class="features-grid__card" data-aos="fade-up" data-aos-delay="800" data-aos-duration="700">
+          <div class="features-grid__card-icon">
+            <img src="assets/images/icon-feature-4.svg" alt="">
+          </div>
+          <h3 class="features-grid__card-title">Meer inzicht in inzetbaarheid</h3>
+          <p class="features-grid__card-text">Voorkom langdurige bankzitters binnen je pool.</p>
+        </div>
+
+        <div class="features-grid__card" data-aos="fade-up" data-aos-delay="900" data-aos-duration="700">
+          <div class="features-grid__card-icon">
+            <img src="assets/images/icon-feature-5.svg" alt="">
+          </div>
+          <h3 class="features-grid__card-title">Betere recruitmentinzichten</h3>
+          <p class="features-grid__card-text">Maak prestaties en kandidaatkwaliteit meetbaar.</p>
+        </div>
+
+        <div class="features-grid__card" data-aos="fade-up" data-aos-delay="1000" data-aos-duration="700">
+          <div class="features-grid__card-icon">
+            <img src="assets/images/icon-feature-6.svg" alt="">
+          </div>
+          <h3 class="features-grid__card-title">Sneller van match naar plaatsing</h3>
+          <p class="features-grid__card-text">Werk efficiënter met actuele kandidaatdata.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <img src="assets/images/footer-shape.svg" alt="" class="footer__shape">
+    <div class="footer__main-wrap">
+      <img src="assets/images/footer-main-img.jpg" alt="" srcset="">
+
+      <div class="footer__secondary-img">
+        <img src="assets/images/footer-img-2.jpg" alt="" srcset="">
+      </div>
+
+      <div class="footer__banner">
+        <div class="container-l">
+          <div class="footer__banner-card">
+            <span class="footer__banner-tagline">Van Vacature</span>
+            <h2 class="footer__banner-title">naar Match</h2>
+            <p class="footer__banner-text">
+              Ga het gesprek met de opdrachtgever van de vacature warmer in dan ooit. Door de feedback functie in de Hudle Link, weet je meteen hoe je de lead kan opvolgen.
+            </p>
+            <p class="footer__banner-text footer__banner-text--bold">
+              Zo maak je detacheren een makkie.
+            </p>
+            <a href="#" class="footer__banner-btn">Bekijk features</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__cta">
+      <div class="container-l">
+        <h2 class="footer__cta-title">Klaar om te <span>beginnen?</span></h2>
+        <div class="footer__cta-actions">
+          <a href="#" class="footer__cta-btn footer__cta-btn--primary">Boek een demo</a>
+          <a href="#" class="footer__cta-btn footer__cta-btn--secondary">Bekijk features</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__main">
+      <div class="container-l">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <a href="/" class="footer__logo">
+              <img src="assets/images/main-logo-white.svg" alt="Hudle">
+            </a>
+            <p class="footer__desc">H&eacute;t platform voor staffing compliance en dynamisch CV-beheer. Geoptimaliseerd voor professionele bureaus.</p>
+            <p class="footer__copyright">&copy; 2026 Hudle Solutions</p>
+
+            <div class="footer__social">
+              <a href="#"><img src="assets/images/icon-linkedin.svg" alt="" srcset=""></a>
+              <a href="#"><img src="assets/images/icon-x.svg" alt="" srcset=""></a>
+              <a href="#"><img src="assets/images/icon-twitter.svg" alt="" srcset=""></a>
+            </div>
+            <a href="#" class="footer__lang">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <circle cx="8" cy="8" r="7.25" stroke="currentColor" stroke-width="1.5"/>
+                <path d="M1 8H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M8 0.75C9.5 2.5 10.5 5 10.5 8C10.5 11 9.5 13.5 8 15.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M8 0.75C6.5 2.5 5.5 5 5.5 8C5.5 11 6.5 13.5 8 15.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+              Dutch (Netherlands)
+            </a>
+          </div>
+
+          <div class="footer__links">
+            <div class="footer__col">
+              <h4 class="footer__col-title">Product</h4>
+              <ul class="footer__col-list">
+                <li><a href="#">Talentpool</a></li>
+                <li><a href="#">Staffing Performance</a></li>
+                <li><a href="#">Vacature Match</a></li>
+                <li><a href="#">Hudle Link</a></li>
+                <li><a href="#">CV</a></li>
+                <li><a href="#">Profielen en Reminders</a></li>
+                <li><a href="#">VOG Justis API</a></li>
+                <li><a href="#">Auditlogs</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__col-title">Solutions</h4>
+              <ul class="footer__col-list">
+                <li><a href="#">Recruiter</a></li>
+                <li><a href="#">Resourcemanager</a></li>
+                <li><a href="#">Management/Directie</a></li>
+                <li><a href="#">Compliancy officer</a></li>
+                <li><a href="#">Candidate</a></li>
+                <li><a href="#">Opdrachtgever</a></li>
+                <li><a href="#">Detacheringsbureau</a></li>
+                <li><a href="#">Uitzendbureau</a></li>
+                <li><a href="#">Intermediair</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__col-title">Resources</h4>
+              <ul class="footer__col-list">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Over ons</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Roadmap</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init({ once: true });
+  </script>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/features-tabs.js"></script>
+  <script src="js/feature-v2-slider.js"></script>
+  <script src="js/audiences-slider.js"></script>
+  <script src="js/latest-posts-slider.js"></script>
+</body>
+</html>
