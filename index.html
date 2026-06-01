@@ -26,13 +26,31 @@
       <nav class="navbar__nav">
         <ul class="navbar__list">
           <li class="navbar__item navbar__item--dropdown">
-            <button type="button" class="navbar__link navbar__link--dropdown" aria-expanded="false" aria-controls="product-megamenu" id="product-menu-trigger">
+            <button type="button" class="navbar__link navbar__link--dropdown" aria-expanded="false" aria-controls="navbar-megamenu" data-megamenu="product" id="product-menu-trigger">
               Product
               <svg class="navbar__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
             </button>
-            <div class="megamenu" id="product-megamenu" aria-labelledby="product-menu-trigger">
-              <div class="megamenu__panel">
-                <section class="megamenu__section megamenu__section--features">
+          </li>
+          <li class="navbar__item navbar__item--dropdown">
+            <button type="button" class="navbar__link navbar__link--dropdown" aria-expanded="false" aria-controls="navbar-megamenu" data-megamenu="solutions" id="solutions-menu-trigger">
+              Solutions
+              <svg class="navbar__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </li>
+          <li class="navbar__item navbar__item--dropdown">
+            <button type="button" class="navbar__link navbar__link--dropdown" aria-expanded="false" aria-controls="navbar-megamenu" data-megamenu="resources" id="resources-menu-trigger">
+              Resources
+              <svg class="navbar__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </li>
+        </ul>
+
+        <div class="navbar__megamenu-slot" id="navbar-megamenu-slot">
+        <div class="megamenu" id="navbar-megamenu" aria-hidden="true">
+          <div class="megamenu__shell">
+            <div class="megamenu__viewport">
+              <div class="megamenu__content is-active" data-megamenu-content="product" role="region" aria-labelledby="product-menu-trigger">
+<section class="megamenu__section megamenu__section--features">
                   <h3 class="megamenu__title">Features</h3>
                   <div class="megamenu__divider" aria-hidden="true"></div>
                   <div class="megamenu__columns">
@@ -105,16 +123,8 @@
                   </div>
                 </section>
               </div>
-            </div>
-          </li>
-          <li class="navbar__item navbar__item--dropdown">
-            <button type="button" class="navbar__link navbar__link--dropdown" aria-expanded="false" aria-controls="solutions-megamenu" id="solutions-menu-trigger">
-              Solutions
-              <svg class="navbar__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-            <div class="megamenu" id="solutions-megamenu" aria-labelledby="solutions-menu-trigger">
-              <div class="megamenu__panel">
-                <section class="megamenu__section megamenu__section--features">
+              <div class="megamenu__content" data-megamenu-content="solutions" role="region" aria-labelledby="solutions-menu-trigger">
+<section class="megamenu__section megamenu__section--features">
                   <h3 class="megamenu__title">Rollen</h3>
                   <div class="megamenu__divider" aria-hidden="true"></div>
                   <div class="megamenu__columns">
@@ -194,16 +204,8 @@
                   </div>
                 </section>
               </div>
-            </div>
-          </li>
-          <li class="navbar__item navbar__item--dropdown">
-            <button type="button" class="navbar__link navbar__link--dropdown" aria-expanded="false" aria-controls="resources-megamenu" id="resources-menu-trigger">
-              Resources
-              <svg class="navbar__chevron" width="10" height="6" viewBox="0 0 10 6" fill="none" aria-hidden="true"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </button>
-            <div class="megamenu megamenu--v2" id="resources-megamenu" aria-labelledby="resources-menu-trigger">
-              <div class="megamenu__panel megamenu__panel--v2">
-                <section class="megamenu__section">
+              <div class="megamenu__content megamenu__content--resources" data-megamenu-content="resources" role="region" aria-labelledby="resources-menu-trigger">
+<section class="megamenu__section">
                   <h3 class="megamenu__title">Learn</h3>
                   <div class="megamenu__divider" aria-hidden="true"></div>
                   <ul class="megamenu__links megamenu__links--simple">
@@ -243,8 +245,9 @@
                 </section>
               </div>
             </div>
-          </li>
-        </ul>
+          </div>
+        </div>
+        </div>
 
         <div class="navbar__actions">
           <a href="#" class="navbar__login">Login</a>
