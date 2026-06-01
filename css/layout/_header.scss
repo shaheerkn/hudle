@@ -327,6 +327,7 @@ $megamenu-duration: 0.32s;
       opacity $megamenu-duration $megamenu-ease 0.04s,
       transform $megamenu-duration $megamenu-ease 0.04s,
       box-shadow $megamenu-duration $megamenu-ease 0.04s;
+    height: 338px;
   }
 
   .navbar--megamenu-open & &__shell {
@@ -441,7 +442,7 @@ $megamenu-duration: 0.32s;
 
     &:hover {
       .megamenu__link-title {
-        color: #6b5587;
+        color:#4603FA;
       }
     }
   }
@@ -602,11 +603,14 @@ $megamenu-duration: 0.32s;
       transition: color 0.2s;
 
       &:hover {
-        color: #6b5587;
+        color: #4603FA;
       }
     }
 
     .megamenu__section--demo {
+      max-width: calc(275px);
+      width: 100%;
+      margin-left: auto;
       .megamenu__title--cta {
         margin-bottom: 16px;
       }
