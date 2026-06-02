@@ -104,8 +104,12 @@
       transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
+    @media (max-width: 992px) {
+      font-size: 20px;
+    }
+
     &:hover {
-      color: #6B5587;
+      color: #4603FA;
     }
 
     &--dropdown {
@@ -130,7 +134,7 @@
     }
 
     &--dropdown[aria-expanded="true"] {
-      color: #6B5587;
+      color: #4603FA;
       position: relative;
 
       .navbar__chevron {
@@ -165,7 +169,12 @@
     border-radius: 23px;
 
     &:hover {
-      color: #6B5587;
+      color: #4603FA;
+    }
+
+    @media (max-width: 1024px) {
+      width: 100%;
+      padding-block: 13px;
     }
   }
 
@@ -241,7 +250,8 @@
     }
 
     &__item--dropdown.is-open .navbar__link--dropdown {
-      color: #6b5587;
+      color: #4603FA;
+      font-weight: 700;
 
       .navbar__chevron {
         transform: rotate(180deg);
@@ -251,7 +261,7 @@
     &__list {
       flex-direction: column;
       align-items: flex-start;
-      gap: 24px;
+      gap: 35px;
       width: 100%;
     }
 
@@ -294,7 +304,7 @@
 
 $megamenu-ease: cubic-bezier(0.16, 1, 0.3, 1);
 $megamenu-duration: 0.32s;
-$megamenu-scroll-duration: 1.1s;
+$megamenu-scroll-duration: 0.9s;
 $megamenu-scroll-ease: cubic-bezier(0.45, 0.05, 0.55, 0.95);
 
 .megamenu {
@@ -486,6 +496,7 @@ $megamenu-scroll-ease: cubic-bezier(0.45, 0.05, 0.55, 0.95);
     width: 100%;
     transform: none;
     transition: none;
+    box-shadow: none;
 
     .navbar__megamenu-slot & {
       max-height: 0;
@@ -510,11 +521,11 @@ $megamenu-scroll-ease: cubic-bezier(0.45, 0.05, 0.55, 0.95);
     &__shell {
       min-height: 0;
       height: auto;
-      padding: 20px 16px 24px;
+      padding: 0;
       opacity: 1;
       transform: none;
-      box-shadow: none;
-      border-color: #e0d9e6;
+      box-shadow: none !important;
+      border: none;
     }
 
     &__viewport {
@@ -537,11 +548,12 @@ $megamenu-scroll-ease: cubic-bezier(0.45, 0.05, 0.55, 0.95);
       border-left: none;
       padding-top: 8px;
       border-top: 1px solid #e0d9e6;
+      text-align: center;
     }
 
     &__title--cta,
     &__cta-subtitle {
-      text-align: left;
+      text-align: center;
     }
 
     &__title--cta {
@@ -609,8 +621,24 @@ $megamenu-scroll-ease: cubic-bezier(0.45, 0.05, 0.55, 0.95);
       max-width: calc(275px);
       width: 100%;
       margin-left: auto;
+
       .megamenu__title--cta {
         margin-bottom: 16px;
+      }
+
+      @media (max-width: 992px) {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        max-width: 100%;
+
+        .megamenu__title--cta {
+          text-align: center;
+        }
+
+        .megamenu__cta-card {
+          max-width: 193px;
+        }
       }
     }
 

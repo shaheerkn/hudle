@@ -15,7 +15,7 @@
 
   var mobileQuery = window.matchMedia('(max-width: 992px)');
   var closeTimer = null;
-  var SCROLL_DURATION = 1100;
+  var SCROLL_DURATION = 900;
   var SCROLL_TRANSITION =
     'transform ' + SCROLL_DURATION + 'ms cubic-bezier(0.45, 0.05, 0.55, 0.95)';
   var MENU_ORDER = ['product', 'solutions', 'resources'];
