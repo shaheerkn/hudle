@@ -6,18 +6,26 @@
   var megamenuSlot = document.getElementById('navbar-megamenu-slot');
   var dropdownItems = document.querySelectorAll('.navbar__item--dropdown');
   var navList = document.querySelector('.navbar__list');
+  var track = megamenu ? megamenu.querySelector('[data-megamenu-track]') : null;
   var menuContents = megamenu
     ? megamenu.querySelectorAll('[data-megamenu-content]')
     : [];
 
-  if (!toggle || !nav || !navbar || !megamenu || !megamenuSlot || !navList) return;
+  if (!toggle || !nav || !navbar || !megamenu || !megamenuSlot || !navList || !track) return;
 
   var mobileQuery = window.matchMedia('(max-width: 992px)');
   var closeTimer = null;
-  var CLOSE_DELAY = 150;
-  var SWITCH_DURATION = 220;
+  var SCROLL_DURATION = 1100;
+  var SCROLL_TRANSITION =
+    'transform ' + SCROLL_DURATION + 'ms cubic-bezier(0.45, 0.05, 0.55, 0.95)';
+  var MENU_ORDER = ['product', 'solutions', 'resources'];
   var activeMenuId = null;
   var activeItem = null;
+  var scrollTick = 0;
+
+  function getMenuIndex(menuId) {
+    return MENU_ORDER.indexOf(menuId);
+  }
 
   function isMobile() {
     return mobileQuery.matches;
@@ -35,12 +43,45 @@
     });
   }
 
-  function setActiveContent(menuId) {
-    menuContents.forEach(function (content) {
-      var isActive = content.dataset.megamenuContent === menuId;
-      content.classList.toggle('is-active', isActive);
+  function updateContentAccessibility(index) {
+    menuContents.forEach(function (content, i) {
+      content.setAttribute('aria-hidden', i === index ? 'false' : 'true');
     });
+  }
+
+  function getViewport() {
+    return megamenu.querySelector('.megamenu__viewport');
+  }
+
+  function scrollToMenu(menuId, animate) {
+    var index = getMenuIndex(menuId);
+    if (index < 0) return;
+
+    var viewport = getViewport();
+    var slideWidth = viewport ? viewport.getBoundingClientRect().width : 0;
+    var offset = index * slideWidth;
+    var transform = 'translate3d(-' + offset + 'px, 0, 0)';
+
+    updateContentAccessibility(index);
     activeMenuId = menuId;
+
+    if (!animate || isMobile()) {
+      track.style.transition = 'none';
+      track.style.transform = transform;
+      void track.offsetWidth;
+      track.style.removeProperty('transition');
+      return;
+    }
+
+    var tick = ++scrollTick;
+    track.style.transition = SCROLL_TRANSITION;
+
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        if (tick !== scrollTick) return;
+        track.style.transform = transform;
+      });
+    });
   }
 
   function resetMegamenuPosition() {
@@ -68,19 +109,13 @@
   function openMegamenu(menuId, item) {
     clearTimeout(closeTimer);
 
-    var isSwitch =
+    var animate =
+      !isMobile() &&
       navbar.classList.contains('navbar--megamenu-open') &&
-      activeMenuId &&
-      activeMenuId !== menuId;
+      activeMenuId !== null &&
+      getMenuIndex(menuId) !== getMenuIndex(activeMenuId);
 
-    if (isSwitch && !isMobile()) {
-      navbar.classList.add('navbar--megamenu-switching');
-      window.setTimeout(function () {
-        navbar.classList.remove('navbar--megamenu-switching');
-      }, SWITCH_DURATION);
-    }
-
-    setActiveContent(menuId);
+    scrollToMenu(menuId, animate);
     setActiveTrigger(item);
     activeItem = item;
     positionMegamenu(item);
@@ -90,17 +125,17 @@
 
   function closeMegamenu() {
     clearTimeout(closeTimer);
-    navbar.classList.remove('navbar--megamenu-open', 'navbar--megamenu-switching');
+    navbar.classList.remove('navbar--megamenu-open');
     megamenu.setAttribute('aria-hidden', 'true');
     setActiveTrigger(null);
-    activeMenuId = null;
     activeItem = null;
+    scrollToMenu('product', false);
     resetMegamenuPosition();
   }
 
   function scheduleClose() {
     clearTimeout(closeTimer);
-    closeTimer = window.setTimeout(closeMegamenu, CLOSE_DELAY);
+    closeMegamenu();
   }
 
   function isMegamenuHotZone(element) {
@@ -122,6 +157,8 @@
     if (isMegamenuHotZone(event.relatedTarget)) return;
     scheduleClose();
   }
+
+  scrollToMenu('product', false);
 
   toggle.addEventListener('click', function () {
     this.classList.toggle('active');
@@ -219,5 +256,10 @@
 
   mobileQuery.addEventListener('change', function () {
     closeMegamenu();
+  });
+
+  window.addEventListener('resize', function () {
+    if (!activeMenuId) return;
+    scrollToMenu(activeMenuId, false);
   });
 })();

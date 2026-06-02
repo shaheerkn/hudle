@@ -294,13 +294,15 @@
 
 $megamenu-ease: cubic-bezier(0.16, 1, 0.3, 1);
 $megamenu-duration: 0.32s;
+$megamenu-scroll-duration: 1.1s;
+$megamenu-scroll-ease: cubic-bezier(0.45, 0.05, 0.55, 0.95);
 
 .megamenu {
   display: block;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translate3d(0, 10px, 0);
+  transform: translate3d(0, 8px, 0);
   transition:
     opacity $megamenu-duration $megamenu-ease,
     transform $megamenu-duration $megamenu-ease,
@@ -322,11 +324,11 @@ $megamenu-duration: 0.32s;
     border-radius: 10px;
     box-shadow: 0px 0px 11px 0px #91919140;
     opacity: 0;
-    transform: translate3d(0, 8px, 0) scale(0.985);
+    transform: translate3d(0, 6px, 0) scale(0.99);
     transition:
-      opacity $megamenu-duration $megamenu-ease 0.04s,
-      transform $megamenu-duration $megamenu-ease 0.04s,
-      box-shadow $megamenu-duration $megamenu-ease 0.04s;
+      opacity $megamenu-duration $megamenu-ease,
+      transform $megamenu-duration $megamenu-ease,
+      box-shadow $megamenu-duration $megamenu-ease;
     height: 338px;
   }
 
@@ -336,43 +338,31 @@ $megamenu-duration: 0.32s;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   }
 
-  .navbar--megamenu-open.navbar--megamenu-switching & &__shell {
-    transition: box-shadow $megamenu-duration $megamenu-ease;
-    transform: translate3d(0, 0, 0) scale(1);
+  &__viewport {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
   }
 
-  &__viewport {
-    display: grid;
-    grid-template-areas: "stack";
-    position: relative;
+  &__track {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform $megamenu-scroll-duration $megamenu-scroll-ease;
+    will-change: transform;
   }
 
   &__content {
-    grid-area: stack;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 100%;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1.2fr);
     align-items: start;
     gap: 100px;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition:
-      opacity 0.22s $megamenu-ease,
-      visibility 0.22s;
-
-    &:not(.is-active) {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-    }
-
-    &.is-active {
-      position: relative;
-      opacity: 1;
-      visibility: visible;
-      pointer-events: auto;
-    }
+    min-height: 100%;
   }
 
   &__section {
@@ -487,7 +477,7 @@ $megamenu-duration: 0.32s;
     top: 100%;
     left: 0;
     right: 0;
-    z-index: -1;
+    z-index: 99;
     padding: 12px 20px 20px;
   }
 
@@ -519,6 +509,7 @@ $megamenu-duration: 0.32s;
 
     &__shell {
       min-height: 0;
+      height: auto;
       padding: 20px 16px 24px;
       opacity: 1;
       transform: none;
@@ -526,22 +517,19 @@ $megamenu-duration: 0.32s;
       border-color: #e0d9e6;
     }
 
+    &__viewport {
+      min-height: 280px;
+      height: auto;
+    }
+
+    &__track {
+      height: auto;
+    }
+
     &__content {
-      min-height: 0;
       grid-template-columns: 1fr;
       gap: 28px;
-
-      &:not(.is-active) {
-        display: none;
-        position: static;
-      }
-
-      &.is-active {
-        display: grid;
-        position: relative;
-        opacity: 1;
-        visibility: visible;
-      }
+      min-height: 280px;
     }
 
     &__section--cta {
@@ -573,10 +561,20 @@ $megamenu-duration: 0.32s;
 
   @media (prefers-reduced-motion: reduce) {
     &,
-    &__shell,
-    &__content {
+    &__shell {
       transition: none !important;
+    }
+
+    .navbar--megamenu-open & {
       transform: none !important;
+    }
+
+    .navbar--megamenu-open & &__shell {
+      transform: none !important;
+    }
+
+    &__track {
+      transition: none !important;
     }
   }
 
