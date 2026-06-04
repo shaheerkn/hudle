@@ -1055,6 +1055,20 @@ body {
   }
 }
 
+.btn-outline {
+  border: 0.5px solid #8793F8;
+  padding: 18px 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -5%;
+  background: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #8793F8;
+}
+
 .hero {
   padding: 74px 0 80px;
 }
@@ -1266,7 +1280,7 @@ body {
 }
 
 .hero--v2 {
-  padding: 80px 0;
+  padding: 80px 0 0;
 }
 
 .hero-v2 {
@@ -1291,6 +1305,11 @@ body {
   flex-direction: column;
   align-items: flex-start;
   padding-block: 71px 217px;
+}
+@media (max-width: 1280px) {
+  .hero-v2__content {
+    padding-block: 40px 100px;
+  }
 }
 .hero-v2__tagline {
   font-family: "Raleway", sans-serif;
@@ -1436,6 +1455,8 @@ body {
 .img-w-text-wrapper {
   position: relative;
   background: linear-gradient(90deg, #F9F3F1 0%, #FFFFFF 100%);
+  padding-top: 110px;
+  padding-bottom: 180px;
 }
 @media (min-width: 1500px) {
   .img-w-text-wrapper {
@@ -1446,10 +1467,10 @@ body {
 
 .img-w-text-wrapper__bg-top {
   position: absolute;
-  top: -120px;
   left: 0;
   width: 100%;
-  z-index: -1;
+  top: 0;
+  background-color: #fff;
 }
 @media (min-width: 1500px) {
   .img-w-text-wrapper__bg-top {
@@ -1462,10 +1483,10 @@ body {
 
 .img-w-text-wrapper__bg-bottom {
   position: absolute;
-  bottom: -120px;
+  bottom: 0;
   left: 0;
   width: 100%;
-  z-index: -1;
+  background-color: #fff;
 }
 @media (min-width: 1500px) {
   .img-w-text-wrapper__bg-bottom .img-w-text-wrapper__bg-bottom {
@@ -1477,7 +1498,10 @@ body {
 }
 
 .img-w-text {
-  margin: 60px 0;
+  margin: 0 60px 0;
+}
+.img-w-text + .img-w-text {
+  margin-top: 60px;
 }
 .img-w-text .container-l {
   padding-inline: 20px;
@@ -1520,7 +1544,7 @@ body {
   font-weight: 500;
   font-size: 20px;
   letter-spacing: -5%;
-  color: #000000;
+  color: #56405D;
   margin-bottom: 12px;
 }
 .img-w-text__title {
@@ -1528,7 +1552,8 @@ body {
   font-weight: 400;
   font-size: 40px;
   letter-spacing: -5%;
-  color: #000000;
+  color: #56405D;
+  margin-bottom: 40px;
 }
 .img-w-text__text {
   font-family: "DM Sans", sans-serif;
@@ -1536,7 +1561,7 @@ body {
   font-size: 18px;
   letter-spacing: -5%;
   color: #000000;
-  margin-top: 24px;
+  color: #56405D;
   max-width: 520px;
 }
 .img-w-text__buttons {
@@ -1575,9 +1600,22 @@ body {
   background-color: #5a4873;
 }
 @media (max-width: 992px) {
+  .img-w-text {
+    margin: 0;
+    padding: 0;
+  }
+  .img-w-text + .img-w-text {
+    margin-top: 40px;
+  }
   .img-w-text__grid {
     grid-template-columns: 1fr;
     gap: 40px;
+  }
+  .img-w-text--reverse .img-w-text__image {
+    order: 1;
+  }
+  .img-w-text--reverse .img-w-text__content {
+    order: 2;
   }
   .img-w-text__content {
     align-items: center;
@@ -1591,11 +1629,9 @@ body {
   }
 }
 @media (max-width: 768px) {
-  .img-w-text {
-    padding: 60px 0;
-  }
   .img-w-text__title {
     font-size: 32px;
+    margin-bottom: 10px;
   }
   .img-w-text__tagline {
     font-size: 18px;
@@ -1605,9 +1641,6 @@ body {
   }
 }
 @media (max-width: 576px) {
-  .img-w-text {
-    padding: 40px 0;
-  }
   .img-w-text__title {
     font-size: 28px;
   }
@@ -2837,6 +2870,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+.professionals--reverse .professionals__content {
+  color: #56405D;
+}
 .professionals__tagline {
   display: block;
   font-family: "Raleway", sans-serif;
@@ -2844,7 +2880,6 @@ body {
   font-size: 24px;
   line-height: 100%;
   letter-spacing: -5%;
-  color: #000;
   margin-bottom: 12px;
 }
 .professionals__title {
@@ -2853,7 +2888,13 @@ body {
   font-size: 48px;
   line-height: 100%;
   letter-spacing: -5%;
-  color: #000;
+}
+.professionals__description {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -5%;
+  margin-top: 30px;
 }
 .professionals__list {
   list-style: none;
@@ -2872,7 +2913,7 @@ body {
   font-size: 16px;
   line-height: 100%;
   letter-spacing: -0.05em;
-  color: #000;
+  color: #101010;
 }
 .professionals__list-icon {
   width: 24px;
@@ -2924,6 +2965,9 @@ body {
 .professionals__image img {
   width: 100%;
   border-radius: 16px;
+}
+.professionals--reverse .professionals__image {
+  max-width: 100%;
 }
 @media (max-width: 992px) {
   .professionals {
@@ -3025,7 +3069,7 @@ body {
     margin: 80px 0;
   }
   .features-grid__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @media (max-width: 576px) {

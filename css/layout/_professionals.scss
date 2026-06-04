@@ -17,6 +17,10 @@
     flex-direction: column;
   }
 
+  &--reverse &__content {
+    color: #56405D;
+  }
+
   &__tagline {
     display: block;
     font-family: "Raleway", sans-serif;
@@ -24,7 +28,6 @@
     font-size: 24px;
     line-height: 100%;
     letter-spacing: -5%;
-    color: #000;
     margin-bottom: 12px;
   }
 
@@ -34,7 +37,14 @@
     font-size: 48px;
     line-height: 100%;
     letter-spacing: -5%;
-    color: #000;
+  }
+
+  &__description {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -5%;
+    margin-top: 30px;
   }
 
   &__list {
@@ -55,7 +65,7 @@
     font-size: 16px;
     line-height: 100%;
     letter-spacing: -0.05em;
-    color: #000;
+    color: #101010;
   }
 
   &__list-icon {
@@ -115,6 +125,12 @@
     img {
       width: 100%;
       border-radius: 16px;
+    }
+  }
+
+  &--reverse {
+    .professionals__image {
+      max-width: 100%;
     }
   }
 
